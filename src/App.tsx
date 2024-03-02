@@ -1,8 +1,14 @@
 import "./App.css";
-import SpaceBackground from "./components/SpaceBackground";
+import Presentation from "./components/presentation";
+import SpaceBackground from "./components/space-background";
 
 function App() {
-  return <SpaceBackground />;
+  return (
+    <>
+      <SpaceBackground />
+      <Presentation />
+    </>
+  );
 }
 
 export default App;

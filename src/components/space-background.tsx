@@ -1,6 +1,6 @@
 import React from "react";
-import { StyledSpaceBackground } from "../styled-components/SpaceBackground";
-import useSpaceBackground from "../hooks/useSpaceBackground";
+import { StyledSpaceBackground } from "../styled-components/space-background";
+import useSpaceBackground from "../hooks/use-space-background";
 
 const SpaceBackground: React.FC = () => {
   const containerRef = useSpaceBackground();

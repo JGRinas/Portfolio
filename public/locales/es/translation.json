@@ -1,1 +1,13 @@
-{}
+{
+    "nav": {
+        "home": "Inicio",
+        "contacts": "Contacto",
+        "projects": "Proyectos",
+        "aboutMe": "Sobre mi",
+        "experience": "Experiencia"
+    },
+    "language": {
+        "en": "🇺🇸 English",
+        "es": "🇪🇸 Español"
+    }
+}

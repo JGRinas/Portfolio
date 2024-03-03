@@ -18,8 +18,8 @@ import {
   BufferGeometry,
   PointsMaterial,
   Float32BufferAttribute,
-  Color,
   Vector3,
+  CanvasTexture,
 } from "three";
 
 export interface SpaceBackgroundContextProps {
@@ -48,7 +48,29 @@ export const SpaceBackgroundProvider: FC<SpaceBackgroundProviderProps> = ({
   const init = useCallback(() => {
     // Initialize the scene
     scene = new Scene();
-    scene.background = new Color("#06000a");
+
+    const canvas = document.createElement("canvas");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const context = canvas.getContext("2d");
+    if (context) {
+      const gradient = context.createLinearGradient(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+      );
+      gradient.addColorStop(0, "#020007");
+      gradient.addColorStop(0.5, "#000002");
+      gradient.addColorStop(0.75, "#000002");
+      gradient.addColorStop(1, "#000002");
+      context.fillStyle = gradient;
+      context.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    const texture = new CanvasTexture(canvas);
+    scene.background = texture;
 
     // Create camera
     camera = new PerspectiveCamera(

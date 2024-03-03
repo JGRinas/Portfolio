@@ -11,4 +11,5 @@ export const NavButton = styled.button`
   margin: 0 10px;
   background-color: rgba(0, 0, 0, 0.2);
   width: 150px;
+  color: #fff;
 `;

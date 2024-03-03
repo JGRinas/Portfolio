@@ -1,13 +1,8 @@
 import React from "react";
 import { Container } from "../styled-components/presentation";
-import { SunIcon } from "../assets/icons";
 
 const Presentation: React.FC = () => {
-  return (
-    <Container>
-      <SunIcon />
-    </Container>
-  );
+  return <Container></Container>;
 };
 
 export default Presentation;

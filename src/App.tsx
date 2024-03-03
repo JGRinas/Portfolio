@@ -1,14 +1,8 @@
 import "./App.css";
-import Presentation from "./components/presentation";
-import SpaceBackground from "./components/space-background";
+import Home from "./pages";
 
 function App() {
-  return (
-    <>
-      <SpaceBackground />
-      <Presentation />
-    </>
-  );
+  return <Home />;
 }
 
 export default App;

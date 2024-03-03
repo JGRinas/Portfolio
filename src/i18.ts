@@ -6,7 +6,7 @@ import common_en from "../public/locales/en/translation.json";
 
 i18next.use(initReactI18next).init({
   interpolation: { escapeValue: false },
-  lng: "es",
+  lng: "en",
   resources: {
     es: {
       common: common_es,

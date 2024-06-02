@@ -13,7 +13,7 @@ Welcome to my portfolio! This project showcases my skills and projects as a Full
 ## Project Structure
 
 The project is organized as follows:
-
+```
 /Portfolio
 ├── public
 │ └── index.html
@@ -40,7 +40,7 @@ The project is organized as follows:
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
-
+```
 ## Technologies Used
 
 ### Front-end

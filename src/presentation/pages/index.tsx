@@ -1,3 +1,4 @@
+import LanguageSwitcher from "../components/LanguageSwitcher";
 import ThemeSwitch from "../components/ThemeSwitch";
 
 interface IHome {
@@ -9,6 +10,7 @@ const Home = ({ toggleTheme }: IHome) => {
     <>
       <header>
         <ThemeSwitch toggleTheme={toggleTheme} />
+        <LanguageSwitcher />
       </header>
       <main></main>
     </>

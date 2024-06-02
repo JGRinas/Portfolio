@@ -22,8 +22,8 @@
 
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"],  // Alias para ./src
-      "@/*": ["./*"]       // Alias para la raíz del proyecto
+      "~/*": ["./src/*"], // Alias para ./src
+      "@/*": ["./*"] // Alias para la raíz del proyecto
     }
   },
   "include": ["src"],

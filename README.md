@@ -68,4 +68,4 @@ SVG icons are imported as React components using the Vite Plugin SVGR. Icons are
 
 If you have any questions or would like to get in touch, feel free to contact me:
 
-Your Name - [juangabrielrinas@gmail.com](mailto:juangabrielrinas@gmail.com)
+[juangabrielrinas@gmail.com](mailto:juangabrielrinas@gmail.com)

@@ -10,7 +10,7 @@ const Home = ({ toggleTheme }: IHome) => {
       <header>
         <ThemeSwitch toggleTheme={toggleTheme} />
       </header>
-      <main></main>;
+      <main></main>
     </>
   );
 };

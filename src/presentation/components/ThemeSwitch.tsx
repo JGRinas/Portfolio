@@ -1,16 +1,10 @@
-import React from "react";
-import { useTheme } from "styled-components";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 import { SwitchContainer } from "../styled/components/SwitchContainer";
+import { useThemeContext } from "~/infrastructure/hooks/useThemeContext";
 
-interface ThemeSwitchProps {
-  toggleTheme: () => void;
-}
-
-const ThemeSwitch: React.FC<ThemeSwitchProps> = ({ toggleTheme }) => {
-  const theme = useTheme();
-  const isDarkTheme = theme.colors.background1 === "#121212";
+const ThemeSwitch = () => {
+  const { toggleTheme, isDarkTheme } = useThemeContext();
 
   return (
     <SwitchContainer onClick={toggleTheme}>

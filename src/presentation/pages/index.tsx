@@ -1,20 +1,12 @@
-import LanguageSwitcher from "../components/LanguageSwitcher";
-import ThemeSwitch from "../components/ThemeSwitch";
+import Navbar from "../components/NavBar";
 
-interface IHome {
-  toggleTheme: () => void;
-}
-
-const Home = ({ toggleTheme }: IHome) => {
-  return (
-    <>
-      <header>
-        <ThemeSwitch toggleTheme={toggleTheme} />
-        <LanguageSwitcher />
-      </header>
-      <main></main>
-    </>
-  );
-};
+const Home = () => (
+  <>
+    <header>
+      <Navbar />
+    </header>
+    <main></main>
+  </>
+);
 
 export default Home;

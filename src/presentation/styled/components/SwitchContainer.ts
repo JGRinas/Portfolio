@@ -8,4 +8,7 @@ export const SwitchContainer = styled.div`
   &:hover {
     color: ${(props) => props.theme.colors.hover.icon};
   }
+  background-color: ${(props) => props.theme.colors.background2};
+  padding: 8px;
+  border-radius: 5px;
 `;

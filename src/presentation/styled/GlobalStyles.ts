@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     transition: all 0.25s linear;
     min-height: 100vh;
+    margin: 0;
   }
   .icon {
     fill: ${(props) => props.theme.colors.icon};

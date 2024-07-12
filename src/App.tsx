@@ -1,22 +1,14 @@
-import { useState } from "react";
-import { ThemeProvider } from "styled-components";
-
-import { lightTheme, darkTheme } from "./presentation/styled/themes";
-import { GlobalStyles } from "./presentation/styled/GlobalStyles";
-import Home from "./presentation/pages";
 import { I18nextProvider } from "react-i18next";
+
+import Home from "./presentation/pages";
 import i18 from "~/infrastructure/config/i18";
+import { ThemeProvider } from "./infrastructure/providers/ThemeContext";
 
 function App() {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
-
-  const toggleTheme = () => setIsDarkTheme((prevTheme) => !prevTheme);
-
   return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+    <ThemeProvider>
       <I18nextProvider i18n={i18}>
-        <GlobalStyles />
-        <Home toggleTheme={toggleTheme} />
+        <Home />
       </I18nextProvider>
     </ThemeProvider>
   );

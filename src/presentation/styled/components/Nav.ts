@@ -17,7 +17,8 @@ export const NavLink = styled.a`
   text-transform: uppercase;
   position: relative;
   transition: color 0.3s ease, margin 0.3s ease;
-
+  font-weight: bold;
+  
   &::before {
     content: "<";
     margin-right: 2px;

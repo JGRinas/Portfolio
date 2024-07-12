@@ -6,3 +6,8 @@ export const StyledContainer = styled.div`
   padding: 0 1rem;
   width: 100%;
 `;
+
+export const Header = styled.header`
+  background-color: ${(props) => props.theme.colors.background1};
+  display: flex;
+`;

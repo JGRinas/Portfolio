@@ -1,12 +1,13 @@
 {
-    "nav": {
-        "contact": "Contact",
-        "projects": "Projects",
-        "aboutMe": "About Me",
-        "experience": "Experience"
-    },
-    "language": {
-        "en": "🇺🇸 English",
-        "es": "🇪🇸 Español"
-    }
+  "nav": {
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "language": {
+    "en": "🇺🇸 English",
+    "es": "🇪🇸 Español"
+  }
 }

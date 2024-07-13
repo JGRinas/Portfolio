@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const PresentationContainer = styled.div`
-  background-color: ${(props) => props.theme.colors.background1};
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -15,7 +14,6 @@ export const VerticalLine = styled.div`
 `;
 
 export const SocialContainer = styled.div`
-  background-color: ${(props) => props.theme.colors.background1};
   display: flex;
   flex-direction: column;
   align-items: center;

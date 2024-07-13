@@ -6,7 +6,6 @@ export const Nav = styled.nav`
   align-items: center;
   gap: 20px;
   padding: 1rem;
-  background-color: ${(props) => props.theme.colors.background1};
   color: ${(props) => props.theme.colors.text};
 `;
 

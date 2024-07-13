@@ -2,10 +2,10 @@ import { DefaultTheme } from "styled-components";
 
 export const lightTheme: DefaultTheme = {
   colors: {
-    background1: "#ffffff",
-    background2: "#f3f4f6",
+    background1: "#f0f0f0",
+    background2: "#e0e0e0",
     text: "#171717",
-    primary: "#3DCFB6",
+    primary: "#00bfff",
     secondary: "#171717",
     icon: "#171717",
     button: {
@@ -25,10 +25,10 @@ export const lightTheme: DefaultTheme = {
 
 export const darkTheme: DefaultTheme = {
   colors: {
-    background1: "#121212",
-    background2: "#1e1e1e",
-    text: "#e0e0e0",
-    primary: "#3DCFB6",
+    background1: "#161616",
+    background2: "#181f20",
+    text: "#a7a9a9",
+    primary: "#00bfff",
     secondary: "#e0e0e0",
     icon: "#e0e0e0",
     button: {

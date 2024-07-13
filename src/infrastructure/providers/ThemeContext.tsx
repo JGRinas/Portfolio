@@ -1,4 +1,4 @@
-import React, { createContext, useState, ReactNode } from "react";
+import React, { createContext, useState, ReactNode, useMemo } from "react";
 import { ThemeProvider as StyledThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "~/presentation/styled/themes";
 import { GlobalStyles } from "~/presentation/styled/GlobalStyles";
@@ -20,8 +20,10 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
 
   const toggleTheme = () => setIsDarkTheme((prevTheme) => !prevTheme);
 
+  const value = useMemo(() => ({ isDarkTheme, toggleTheme }), [isDarkTheme]);
+
   return (
-    <ThemeContext.Provider value={{ isDarkTheme, toggleTheme }}>
+    <ThemeContext.Provider value={value}>
       <StyledThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
         <StyledContainer>
           <GlobalStyles />

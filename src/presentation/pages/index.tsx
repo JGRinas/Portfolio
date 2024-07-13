@@ -1,7 +1,8 @@
 import Navbar from "../components/NavBar";
 import { Presentation } from "../components/Presentation";
 import { SocialMedia } from "../components/SocialMedia";
-import { Header } from "../styled/components/Container";
+import { Header, Main } from "../styled/components/Container";
+import { StyledArrowBottom } from "../styled/components/Icons";
 
 const Home = () => (
   <>
@@ -12,7 +13,8 @@ const Home = () => (
         <Presentation />
       </div>
     </Header>
-    <main></main>
+    <StyledArrowBottom height={150} width={150} />
+    <Main></Main>
   </>
 );
 

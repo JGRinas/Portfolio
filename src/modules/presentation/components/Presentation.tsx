@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { PresentationContainer } from "../styled/components/Presentation";
 import { Text, TitleXL } from "../styled/ui/Text";
-import CodeBackgroundContent from "./CodeBackground";
+import CodeBackgroundContent from "../ui/CodeBackground";
 import { Button } from "../styled/ui/Buttons";
 import { RoundImage } from "../styled/ui/Image";
 import Photo from "../../../assets/images/photo-me.jpg";

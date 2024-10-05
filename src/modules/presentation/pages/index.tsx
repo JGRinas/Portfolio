@@ -1,6 +1,9 @@
+import { AboutMe } from "../components/aboutme/AboutMe";
+import { Contact } from "../components/Contact";
 import { Presentation } from "../components/Presentation";
+import { Projects } from "../components/projects/Projects";
 import { SocialMedia } from "../components/SocialMedia";
-import { Header, Main } from "../styled/components/Container";
+import { Footer, Header, Main } from "../styled/components/Container";
 
 const Home = () => (
   <>
@@ -8,7 +11,13 @@ const Home = () => (
       <SocialMedia />
       <Presentation />
     </Header>
-    <Main></Main>
+    <Main>
+      <AboutMe />
+      <Projects />
+    </Main>
+    <Footer>
+      <Contact />
+    </Footer>
   </>
 );
 

@@ -6,12 +6,17 @@ export const TitleXL = styled.h1`
 `;
 
 export const TitleL = styled.h2`
-  font-size: 16px;
+  font-size: 2rem;
   font-weight: bold;
 `;
 
-export const Subtitle = styled.h3`
-  font-size: 14px;
+export const TitleM = styled.h3`
+  font-size: 1rem;
+  font-weight: bold;
+`;
+
+export const TitleS = styled.h4`
+  font-size: 0.9rem;
   font-weight: bold;
 `;
 

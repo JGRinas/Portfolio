@@ -24,3 +24,13 @@ export const Main = styled.main`
   justify-content: center;
   align-items: center;
 `;
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid;
+  margin-bottom: 50px;
+  padding: 50px 0;
+`;

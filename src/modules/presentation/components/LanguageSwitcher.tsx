@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Option, Select } from "../styled/components/Select";
+import { Option, Select } from "../styled/ui/Select";
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n, t } = useTranslation("common", { keyPrefix: "language" });

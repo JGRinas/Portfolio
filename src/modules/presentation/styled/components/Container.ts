@@ -10,10 +10,12 @@ export const StyledContainer = styled.div`
 `;
 
 export const Header = styled.header`
+  border-top: 1px solid;
+  margin-top: 50px;
+  padding-top: 50px;
   display: flex;
+  align-items: start;
   justify-content: center;
-  min-height: 100vh;
-  flex-direction: column;
 `;
 
 export const Main = styled.main`

@@ -7,14 +7,17 @@ import { StyledArrowBottom } from "../styled/components/Icons";
 const Home = () => (
   <>
     <Header>
-      <SocialMedia />
-      <div>
-        <Navbar />
-        <Presentation />
+      <div style={{ display: "flex" }}>
+        <SocialMedia />
+        <div>
+          <Navbar />
+          <Presentation />
+        </div>
       </div>
+      <StyledArrowBottom height={150} width={150} />
     </Header>
-    <StyledArrowBottom height={150} width={150} />
-    <Main></Main>
+    <Main>
+    </Main>
   </>
 );
 

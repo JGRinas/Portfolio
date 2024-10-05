@@ -20,6 +20,22 @@ export const HighlightedTitle = styled(TitleXXL)`
   }
 `;
 
+export const SectionTitle = styled.h1`
+  font-size: 3rem;
+  color: ${(props) => props.theme.colors.secondary};
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    width: 3rem;
+    height: 0.25rem;
+    background-color: ${(props) => props.theme.colors.secondary};
+    transform: translateX(0.1rem);
+  }
+`;
+
 export const Subtitle = styled.h1`
   font-size: 1.2rem;
 `;

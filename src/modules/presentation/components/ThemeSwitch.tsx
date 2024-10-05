@@ -1,7 +1,7 @@
 import { FaSun, FaMoon } from "react-icons/fa";
 
 import { SwitchContainer } from "../styled/components/SwitchContainer";
-import { useThemeContext } from "~/infrastructure/hooks/useThemeContext";
+import { useThemeContext } from "~/modules/infrastructure/hooks/useThemeContext";
 
 const ThemeSwitch = () => {
   const { toggleTheme, isDarkTheme } = useThemeContext();

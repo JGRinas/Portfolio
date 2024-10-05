@@ -1,8 +1,8 @@
 import { I18nextProvider } from "react-i18next";
 
-import Home from "./presentation/pages";
-import i18 from "~/infrastructure/config/i18";
-import { ThemeProvider } from "./infrastructure/providers/ThemeContext";
+import Home from "./modules/presentation/pages";
+import i18 from "~/config/i18";
+import { ThemeProvider } from "./modules/infrastructure/providers/ThemeContext";
 
 function App() {
   return (

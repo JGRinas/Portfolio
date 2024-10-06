@@ -4,6 +4,7 @@ export { default as LinkedinIcon } from "./linkedin.svg?react";
 export { default as ArrowBottom } from "./arrow-bottom.svg?react";
 export { default as DiscordIcon } from "./discord.svg?react";
 export { default as EmailIcon } from "./email.svg?react";
+export { default as LanguageIcon } from "./language.svg?react";
 
 //Technologies
 export { default as DockerIcon } from "./technologies/docker.svg?react";

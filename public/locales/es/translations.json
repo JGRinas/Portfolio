@@ -1,13 +1,56 @@
 {
-  "nav": {
-    "aboutMe": "Sobre Mí",
-    "projects": "Proyectos",
-    "experience": "Experiencia",
-    "skills": "Habilidades",
-    "contact": "Contacto"
-  },
   "language": {
-    "en": "🇺🇸 English",
-    "es": "🇪🇸 Español"
+    "en": "US - English",
+    "es": "ES - Español"
+  },
+  "presentation": {
+    "desc": "Desarrollador de páginas web & aplicaciones móviles",
+    "btnAbout": "Sobre mi",
+    "btnContact": "Contacto"
+  },
+  "aboutMe": {
+    "title": "Sobre Mí",
+    "desc": "Soy Juan Gabriel Bentiez Rinas, desarrollador Full-Stack y Mobile con más de 2 años de experiencia. Graduado como Analista programador universitario en la Universidad Nacional del Nordeste (UNNE), me gusta aprender nuevas tecnologías y explorar herramientas innovadoras."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "experiences": {
+      "macrointell": {
+        "title": "Full-Stack & Mobile Developer - MacroIntell",
+        "date": "Abril 2023 – Actualidad",
+        "items": {
+          "1": "Lidero el equipo de desarrollo Mobile, estableciendo objetivos de sprint y mentorando a desarrolladores trainee.",
+          "2": "Desarrollo de una billetera virtual con Expo y TypeScript, y de una app de e-commerce con React Native CLI, aplicando Clean Architecture.",
+          "3": "Creación librería UI para uso interno entre proyectos.",
+          "4": "Implementación de funcionalidades en una plataforma web educativa con NextJS y NodeJS."
+        }
+      },
+      "freelance": {
+        "title": "Front-End - Freelance ",
+        "date": "Septiembre 2023 – Septiembre 2024",
+        "items": {
+          "1": "Desarrollo de nuevas secciones para el Front-End de un Back-Office con ReactJS.",
+          "2": "Creación de una plataforma para la gestión de redes sociales de influencers usando NextJS y TypeScript."
+        }
+      }
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías"
+  },
+  "studies": {
+    "title": "Estudios",
+    "analist": {
+      "title": "Analista Programador Universitario - UNNE",
+      "date": "Febrero 2020 – Finalizado"
+    },
+    "downloadCv": "Descargar CV"
+  },
+  "projects": {
+    "title": "Proyectos"
+  },
+  "contacts": {
+    "title": "Contacto",
+    "desc": "Me interesan los proyectos freelance. Sin embargo, si tenés preguntas o propuestas de otro tipo, no dudes en contactarme."
   }
 }

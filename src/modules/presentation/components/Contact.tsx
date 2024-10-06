@@ -1,16 +1,16 @@
 import { FunctionComponent, SVGProps } from "react";
 import { Text, TitleL, TitleS } from "../styled/ui/Text";
 import { EmailIcon, DiscordIcon } from "../../../assets/icons";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation("common", { keyPrefix: "contacts" });
+
   return (
     <section className="grid grid-cols-2 gap-[50px]">
       <div>
-        <TitleL>Contacto</TitleL>
-        <Text>
-          Me interesan los proyectos freelance. Sin embargo, si tenés preguntas
-          o propuestas de otro tipo, no dudes en contactarme.
-        </Text>
+        <TitleL>{t("title")}</TitleL>
+        <Text>{t("desc")}</Text>
       </div>
       <div className="flex flex-row items-center gap-4">
         <IconText icon={DiscordIcon} title="juanGBR#7962" />

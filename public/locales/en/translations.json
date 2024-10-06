@@ -1,14 +1,56 @@
 {
-  "nav": {
-    "aboutMe": "About Me",
-    "projects": "Projects",
-    "experience": "Experience",
-    "skills": "Skills",
-    "contact": "Contact"
-  },
   "language": {
     "en": "🇺🇸 English",
     "es": "🇪🇸 Español"
   },
-  "summary": "Full-Stack and Mobile Developer with a background in Systems Analysis, experienced in creating user-friendly web and mobile apps using React, React Native, Node, and TypeScript."
+  "presentation": {
+    "desc": "Web & Mobile Application Developer",
+    "btnAbout": "About Me",
+    "btnContact": "Contact"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "desc": "I’m Juan Gabriel Bentiez Rinas, a Full-Stack and Mobile Developer with over 2 years of experience. Graduated as a University Program Analyst from the National University of the Northeast (UNNE), I enjoy learning new technologies and exploring innovative tools."
+  },
+  "experience": {
+    "title": "Experience",
+    "experiences": {
+      "macrointell": {
+        "title": "Full-Stack & Mobile Developer - MacroIntell",
+        "date": "April 2023 – Present",
+        "items": {
+          "1": "Lead the Mobile Development team, setting sprint goals and mentoring trainee developers.",
+          "2": "Developed a virtual wallet using Expo and TypeScript, and an e-commerce app with React Native CLI, applying Clean Architecture.",
+          "3": "Created a UI library for internal project use.",
+          "4": "Implemented features for an educational web platform using NextJS and NodeJS."
+        }
+      },
+      "freelance": {
+        "title": "Front-End - Freelance",
+        "date": "September 2023 – September 2024",
+        "items": {
+          "1": "Developed new sections for the Front-End of a Back-Office platform using ReactJS.",
+          "2": "Created a platform for managing influencers’ social media using NextJS and TypeScript."
+        }
+      }
+    }
+  },
+  "technologies": {
+    "title": "Technologies"
+  },
+  "studies": {
+    "title": "Studies",
+    "analist": {
+      "title": "University Program Analyst - UNNE",
+      "date": "February 2020 – Completed"
+    },
+    "downloadCv": "Download CV"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contacts": {
+    "title": "Contact",
+    "desc": "I’m interested in freelance projects. However, if you have any questions or other proposals, feel free to contact me."
+  }
 }

@@ -21,6 +21,7 @@ import {
   TestingLibraryIcon,
   VueIcon,
 } from "../../../../assets/icons";
+import { useTranslation } from "react-i18next";
 
 const icons = [
   { icon: DockerIcon, title: "Docker" },
@@ -44,9 +45,11 @@ const icons = [
 ];
 
 export const Technologies = () => {
+  const { t } = useTranslation("common", { keyPrefix: "technologies" });
+
   return (
     <article>
-      <TitleL className="mb-4">Tecnologías</TitleL>
+      <TitleL className="mb-4">{t("title")}</TitleL>
       <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
         {icons.map(({ icon, title }) => (
           <TechnologyCard key={title} icon={icon} title={title} />

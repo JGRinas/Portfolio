@@ -6,8 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Montserrat", sans-serif;
     transition: all 0.25s linear;
     min-height: 100vh;
-    margin: 0;
-    margin: 0 30px;
+    margin: 0 5rem;
   }
   .icon {
     fill: ${(props) => props.theme.colors.primary};

@@ -5,13 +5,14 @@ import CodeBackgroundContent from "../ui/CodeBackground";
 import { Button } from "../styled/ui/Buttons";
 import { RoundImage } from "../styled/ui/Image";
 import Photo from "../../../assets/images/photo-me.jpg";
+import { SocialMedia } from "./SocialMedia";
 
 export const Presentation = () => {
   const { t } = useTranslation("common", { keyPrefix: "presentation" });
   return (
     <PresentationContainer>
-      <div>
-        <CodeBackgroundContent />
+      <CodeBackgroundContent />
+      <section>
         <div>
           <TitleXL className="-mb-4">Juan Gabriel</TitleXL>
           <TitleXL>Benitez Rinas</TitleXL>
@@ -21,8 +22,11 @@ export const Presentation = () => {
           <Button variant="full">{t("btnAbout")}</Button>
           <Button variant="outline">{t("btnContact")}</Button>
         </div>
-      </div>
-      <RoundImage src={Photo} size={"400px"} />
+      </section>
+      <section className="flex flex-col gap-8">
+        <RoundImage src={Photo} size={"400px"} />
+        <SocialMedia />
+      </section>
     </PresentationContainer>
   );
 };

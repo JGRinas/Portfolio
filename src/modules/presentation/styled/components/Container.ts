@@ -10,11 +10,9 @@ export const StyledContainer = styled.div`
 `;
 
 export const Header = styled.header`
-  border-top: 1px solid;
-  margin-top: 50px;
-  padding-top: 50px;
   display: flex;
   align-items: start;
+  flex-direction: column;
   justify-content: center;
 `;
 

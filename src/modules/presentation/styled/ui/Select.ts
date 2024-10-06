@@ -1,29 +1,29 @@
 import styled from "styled-components";
 
-// Definimos los posibles valores para el prop variant
-interface ButtonProps {
-  variant: "full" | "outline";
-}
-
-export const Button = styled.button<ButtonProps>`
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-size: 16px;
+export const Select = styled.select`
+  padding: 8px 16px;
+  margin-top: 10px;
+  color: ${(props) => props.theme.colors.primary};
+  background: transparent; /* Hace el fondo transparente */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  align-self: flex-end;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
-
-  background-color: ${({ variant, theme }) =>
-    variant === "full" ? theme.colors.primary : "transparent"};
-  color: ${({ variant, theme }) =>
-    variant === "full" ? theme.colors.secondary : theme.colors.primary};
-  border: ${({ variant, theme }) =>
-    variant === "outline" ? `2px solid ${theme.colors.primary}` : "none"};
-
   &:hover {
-    background-color: ${({ variant, theme }) =>
-      variant === "full" ? "#2c3e50" : theme.colors.primary};
-    color: #fff;
-    border-color: #2c3e50;
+    border-color: ${(props) => props.theme.colors.hover.primary};
   }
+
+  &:focus {
+    border-color: ${(props) => props.theme.colors.hover.primary};
+    outline: none;
+    box-shadow: 0 0 1px 1px ${(props) => props.theme.colors.hover.primary};
+  }
+`;
+
+export const Option = styled.option`
+  color: ${(props) => props.theme.colors.primary};
+  font-weight: bold;
+  background: transparent;
 `;

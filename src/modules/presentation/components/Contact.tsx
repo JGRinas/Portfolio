@@ -7,7 +7,7 @@ export const Contact = () => {
   const { t } = useTranslation("common", { keyPrefix: "contacts" });
 
   return (
-    <section className="grid grid-cols-2 gap-[50px]">
+    <section id="contact" className="grid grid-cols-2 gap-[50px]">
       <div>
         <TitleL>{t("title")}</TitleL>
         <Text>{t("desc")}</Text>

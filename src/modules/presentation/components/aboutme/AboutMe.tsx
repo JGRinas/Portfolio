@@ -7,7 +7,7 @@ import { Studies } from "./Studies";
 export const AboutMe = () => {
   const { t } = useTranslation("common", { keyPrefix: "aboutMe" });
   return (
-    <section className="grid grid-cols-2 gap-[40px]">
+    <section id="aboutme" className="grid grid-cols-2 gap-[40px]">
       <div>
         <article className="mb-4">
           <TitleL className="mb-4">{t("title")}</TitleL>

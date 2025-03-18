@@ -1,4 +1,5 @@
 import { AboutMe } from "../components/aboutme/AboutMe";
+import { FadeIn } from "../components/animations/fade-in";
 import { Contact } from "../components/Contact";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import { Presentation } from "../components/Presentation";
@@ -9,16 +10,24 @@ import { HorizontalLine } from "../styled/components/Presentation";
 const Home = () => (
   <>
     <Header>
-      <LanguageSwitcher />
-      <HorizontalLine />
-      <Presentation />
+      <FadeIn delay={50} className="w-full">
+        <LanguageSwitcher />
+        <HorizontalLine />
+        <Presentation />
+      </FadeIn>
     </Header>
     <Main>
-      <AboutMe />
-      <Projects />
+      <FadeIn delay={50} className="w-full">
+        <AboutMe />
+      </FadeIn>
+      <FadeIn delay={50} className="w-full">
+        <Projects />
+      </FadeIn>
     </Main>
     <Footer>
-      <Contact />
+      <FadeIn delay={50}>
+        <Contact />
+      </FadeIn>
     </Footer>
   </>
 );

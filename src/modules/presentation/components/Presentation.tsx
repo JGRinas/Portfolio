@@ -6,21 +6,33 @@ import { Button } from "../styled/ui/Buttons";
 import { RoundImage } from "../styled/ui/Image";
 import Photo from "../../../assets/images/photo-me.jpg";
 import { SocialMedia } from "./SocialMedia";
+import { handleScrollToSection } from "~/modules/infrastructure/utils/handleScroll";
 
 export const Presentation = () => {
   const { t } = useTranslation("common", { keyPrefix: "presentation" });
+
   return (
     <PresentationContainer>
       <CodeBackgroundContent />
       <section>
-        <div>
+        <div className="mt-[-50px] md:mt-0">
           <TitleXL className="-mb-4">Juan Gabriel</TitleXL>
-          <TitleXL>Benitez Rinas</TitleXL>
+          <TitleXL className="whitespace-nowrap">Benitez Rinas</TitleXL>
         </div>
         <Text className="mt-4">{t("desc")}</Text>
-        <div className="mt-8 flex gap-4">
-          <Button variant="full">{t("btnAbout")}</Button>
-          <Button variant="outline">{t("btnContact")}</Button>
+        <div className="mt-8 flex gap-4 justify-center md:justify-start">
+          <Button
+            variant="full"
+            onClick={() => handleScrollToSection("aboutme")}
+          >
+            {t("btnAbout")}
+          </Button>
+          <Button
+            variant="outline"
+            onClick={() => handleScrollToSection("contact")}
+          >
+            {t("btnContact")}
+          </Button>
         </div>
       </section>
       <section className="flex flex-col gap-8">

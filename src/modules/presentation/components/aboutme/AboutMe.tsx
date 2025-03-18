@@ -7,17 +7,25 @@ import { Studies } from "./Studies";
 export const AboutMe = () => {
   const { t } = useTranslation("common", { keyPrefix: "aboutMe" });
   return (
-    <section className="grid grid-cols-2 gap-[40px]">
+    <section
+      id="aboutme"
+      className="grid grid-cols-1 md:grid-cols-2 gap-[40px]"
+    >
       <div>
         <article className="mb-4">
           <TitleL className="mb-4">{t("title")}</TitleL>
           <Text>{t("desc")}</Text>
         </article>
-        <Technologies />
-      </div>
-      <div>
-        <Experience />
         <Studies />
+        <div className="hidden md:!block">
+          <Technologies />
+        </div>
+      </div>
+      <div className="mt-[-30px] md:mt-0">
+        <Experience />
+        <div className="block md:!hidden">
+          <Technologies />
+        </div>
       </div>
     </section>
   );

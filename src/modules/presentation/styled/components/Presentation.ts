@@ -8,6 +8,13 @@ export const PresentationContainer = styled.div`
   width: 100%;
   gap: 70px;
   padding: 2rem 0 15rem 0;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 15rem;
+    margin-top: 2rem;
+  }
 `;
 
 export const VerticalLine = styled.div`

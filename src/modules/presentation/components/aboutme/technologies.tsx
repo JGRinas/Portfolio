@@ -20,29 +20,50 @@ import {
   SqlIcon,
   TestingLibraryIcon,
   VueIcon,
+  AngularIcon,
+  PythonIcon,
+  AWSIcon,
 } from "../../../../assets/icons";
 import { useTranslation } from "react-i18next";
+import { SlideIn } from "../animations/slide-in";
 
-const icons = [
-  { icon: DockerIcon, title: "Docker" },
-  { icon: ExpoIcon, title: "Expo" },
-  { icon: ExpressIcon, title: "Express" },
-  { icon: FigmaIcon, title: "Figma" },
-  { icon: GitIcon, title: "Git" },
-  { icon: GithubIcon, title: "GitHub" },
-  { icon: GitlabIcon, title: "GitLab" },
-  { icon: JestIcon, title: "Jest" },
-  { icon: MongoIcon, title: "MongoDB" },
-  { icon: MySqlIcon, title: "MySQL" },
-  { icon: NextIcon, title: "Next.js" },
-  { icon: NodeIcon, title: "Node.js" },
-  { icon: PhpIcon, title: "PHP" },
-  { icon: ReactIcon, title: "React" },
-  { icon: PostmanIcon, title: "Postman" },
-  { icon: SqlIcon, title: "SQL" },
-  { icon: TestingLibraryIcon, title: "Testing Library" },
-  { icon: VueIcon, title: "Vue.js" },
-];
+const technologies = {
+  frontEnd: [
+    { icon: ReactIcon, title: "React" },
+    { icon: NextIcon, title: "Next.js" },
+    { icon: VueIcon, title: "Vue.js" },
+    { icon: AngularIcon, title: "Angular" },
+  ],
+  backEnd: [
+    { icon: NodeIcon, title: "Node.js" },
+    { icon: ExpressIcon, title: "Express" },
+    { icon: PhpIcon, title: "PHP" },
+    { icon: MongoIcon, title: "MongoDB" },
+    { icon: MySqlIcon, title: "MySQL" },
+    { icon: SqlIcon, title: "SQL" },
+    { icon: PythonIcon, title: "Python" },
+  ],
+  mobile: [
+    { icon: ExpoIcon, title: "Expo" },
+    { icon: ReactIcon, title: "React Native" },
+  ],
+  devOps: [
+    { icon: DockerIcon, title: "Docker" },
+    { icon: GitIcon, title: "Git" },
+    { icon: GithubIcon, title: "GitHub" },
+    { icon: GitlabIcon, title: "GitLab" },
+    { icon: AWSIcon, title: "Amazon S3" },
+    { icon: AWSIcon, title: "Amazon CloudFront" },
+    { icon: AWSIcon, title: "Amazon Route 53" },
+    { icon: AWSIcon, title: "Amazon CM" },
+  ],
+  tools: [
+    { icon: JestIcon, title: "Jest" },
+    { icon: TestingLibraryIcon, title: "Testing Library" },
+    { icon: FigmaIcon, title: "Figma" },
+    { icon: PostmanIcon, title: "Postman" },
+  ],
+};
 
 export const Technologies = () => {
   const { t } = useTranslation("common", { keyPrefix: "technologies" });
@@ -50,11 +71,21 @@ export const Technologies = () => {
   return (
     <article>
       <TitleL className="mb-4">{t("title")}</TitleL>
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-        {icons.map(({ icon, title }) => (
-          <TechnologyCard key={title} icon={icon} title={title} />
-        ))}
-      </div>
+
+      {Object.entries(technologies).map(([category, techs]) => (
+        <section key={category} className="mb-6">
+          <h3 className="text-xl font-bold mb-2">
+            {t(`categories.${category}`)}
+          </h3>
+          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+            {techs.map(({ icon, title }) => (
+              <SlideIn key={title}>
+                <TechnologyCard icon={icon} title={title} />
+              </SlideIn>
+            ))}
+          </div>
+        </section>
+      ))}
     </article>
   );
 };

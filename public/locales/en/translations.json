@@ -15,28 +15,49 @@
   "experience": {
     "title": "Experience",
     "experiences": {
+      "almoby": {
+        "title": "Full-Stack Developer - Almoby Software Solutions",
+        "date": "November 2024 – Present",
+        "items": {
+          "1": "Developed the Front-End in React and the Back-End in Python for a ticketing system used in events.",
+          "2": "Migrated DNS from Hostinger to Cloudflare and deployed the application on Railway.",
+          "3": "Developed the Front-End of a consignment platform based on Figma designs and documentation.",
+          "4": "Configured infrastructure on AWS, including Route 53, ACM, CloudFront, and S3 with static hosting."
+        }
+      },
       "macrointell": {
         "title": "Full-Stack & Mobile Developer - MacroIntell",
         "date": "April 2023 – Present",
         "items": {
           "1": "Lead the Mobile Development team, setting sprint goals and mentoring trainee developers.",
-          "2": "Developed a virtual wallet using Expo and TypeScript, and an e-commerce app with React Native CLI, applying Clean Architecture.",
-          "3": "Created a UI library for internal project use.",
-          "4": "Implemented features for an educational web platform using NextJS and NodeJS."
+          "2": "Developed a virtual wallet using Expo and TypeScript, applying Clean Architecture and Repository pattern.",
+          "3": "Performed native modifications in iOS using Swift and Android using Kotlin.",
+          "4": "Built a marketplace app with React Native and TypeScript, prioritizing performance and usability.",
+          "5": "Implemented unit testing with Jest to ensure quality and stability.",
+          "6": "Published and maintained applications in Play Store and App Store, including internal testing and TestFlight distribution.",
+          "7": "Developed an internal UI library for reuse across multiple company projects.",
+          "8": "Implemented features in an educational web platform using NextJS, NodeJS, ExpressJS, Docker, and MongoDB."
         }
       },
       "freelance": {
         "title": "Front-End - Freelance",
         "date": "September 2023 – September 2024",
         "items": {
-          "1": "Developed new sections for the Front-End of a Back-Office platform using ReactJS.",
-          "2": "Created a platform for managing influencers’ social media using NextJS and TypeScript."
+          "1": "Developed new sections for the Front-End of a social media management platform for influencers using NextJS and TypeScript.",
+          "2": "Implemented new functionalities in the Back-Office of the same platform using ReactJS."
         }
       }
     }
   },
   "technologies": {
-    "title": "Technologies"
+    "title": "Technologies",
+    "categories": {
+      "frontEnd": "Front-End",
+      "backEnd": "Back-End",
+      "mobile": "Mobile",
+      "devOps": "DevOps",
+      "tools": "Tools"
+    }
   },
   "studies": {
     "title": "Studies",
@@ -46,11 +67,53 @@
     },
     "downloadCv": "Download CV"
   },
-  "projects": {
-    "title": "Projects"
-  },
   "contacts": {
     "title": "Contact",
     "desc": "I’m interested in freelance projects. However, if you have any questions or other proposals, feel free to contact me."
+  },
+  "projects": {
+    "title": "Projects",
+    "projectType": {
+      "back": "Back-End",
+      "front": "Front-End",
+      "mobile": "Mobile",
+      "design": "Design",
+      "ios": "iOS",
+      "android": "Android"
+    },
+    "gymback": {
+      "title": "GymBack - Backend for Gym Management",
+      "description": "Backend system for gym management, allowing users and administrators to manage training plans, routines, and exercises. Developed with Node.js, Express, MongoDB Atlas, and TypeScript, following a scalable modular architecture."
+    },
+    "visortv_back": {
+      "title": "Visor TV - Backend",
+      "description": "Backend for modular screen management and its content, allowing administrators and operators to manage weather widgets, security cameras, and information carousels. Developed with Node.js, Express, MongoDB Atlas, and TypeScript."
+    },
+    "almotick_back": {
+      "title": "Almotick - Backend for Event Management",
+      "description": "Backend platform for managing and selling event tickets, allowing users to view featured events, purchase tickets, and manage event creation. Modern and scalable architecture. Developed with Python, Flask, and MongoDB Atlas."
+    },
+    "hre": {
+      "title": "HRE - Auction Management",
+      "description": "Web application for managing cattle auctions, optimizing lot administration, auctions, and catalog visualization. Developed with modern technologies and a clean architecture. Built with React, Vite, and TypeScript, following a clean architecture."
+    },
+    "visortv_front": {
+      "title": "Visor TV - Screen Administration",
+      "description": "Screen management system with different user roles. Allows the creation and editing of screens with weather widgets, live cameras, and information carousels. Developed with React, Vite, and TypeScript, following a clean architecture."
+    },
+    "almotick_front": {
+      "title": "Almotick - Event and Ticket Management",
+      "description": "Web application for managing events and ticket sales, featuring a modern and responsive interface. Developed with React and TypeScript. Built with React, Vite, and TypeScript, following a clean architecture."
+    },
+    "gymapp": {
+      "title": "Gym App",
+      "description": "Mobile application that allows users to manage their workout routine in a gym, offering personalized tracking and exercise planning. Developed with React Native, Expo, and TypeScript, following a clean architecture."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Web and mobile design for this portfolio."
+    },
+    "viewProject": "View project",
+    "viewRepository": "View repository"
   }
 }

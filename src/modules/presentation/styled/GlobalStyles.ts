@@ -7,14 +7,14 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
     min-height: 100vh;
     margin: 0 5rem;
+    @media (max-width: 768px) {
+    margin: 0;
+  }
   }
   .icon {
     fill: ${(props) => props.theme.colors.primary};
     &:hover {
       fill: ${(props) => props.theme.colors.hover.primary};
     }
-  }
-  h1, h2, h3, p {
-  color: ${(props) => props.theme.colors.primary};
   }
 `;

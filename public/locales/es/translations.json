@@ -15,28 +15,49 @@
   "experience": {
     "title": "Experiencia",
     "experiences": {
+      "almoby": {
+        "title": "Desarrollador Full-Stack - Almoby Software Solutions",
+        "date": "Noviembre 2024 – Actualidad",
+        "items": {
+          "1": "Desarrollo del Front-End en React y el Back-End en Python para un sistema de tickets utilizado en eventos.",
+          "2": "Migración de DNS desde Hostinger a Cloudflare y despliegue de la aplicación en Railway.",
+          "3": "Desarrollo del Front-End de una plataforma consignataria a partir de diseños en Figma y documentación.",
+          "4": "Configuración de infraestructura en AWS, incluyendo Route 53, ACM, CloudFront y S3 con hosting estático."
+        }
+      },
       "macrointell": {
         "title": "Full-Stack & Mobile Developer - MacroIntell",
         "date": "Abril 2023 – Actualidad",
         "items": {
           "1": "Lidero el equipo de desarrollo Mobile, estableciendo objetivos de sprint y mentorando a desarrolladores trainee.",
-          "2": "Desarrollo de una billetera virtual con Expo y TypeScript, y de una app de e-commerce con React Native CLI, aplicando Clean Architecture.",
-          "3": "Creación librería UI para uso interno entre proyectos.",
-          "4": "Implementación de funcionalidades en una plataforma web educativa con NextJS y NodeJS."
+          "2": "Desarrollo de una billetera virtual con Expo y TypeScript, aplicando Clean Architecture y patrón Repositorio.",
+          "3": "Modificaciones nativas en iOS con Swift y en Android con Kotlin.",
+          "4": "Construcción de una app de marketplace con React Native y TypeScript, priorizando rendimiento y usabilidad.",
+          "5": "Implementación de pruebas unitarias con Jest para asegurar calidad y estabilidad.",
+          "6": "Publicación y mantenimiento de aplicaciones en Play Store y App Store, incluyendo distribución en pruebas internas y TestFlight.",
+          "7": "Desarrollo de una librería UI interna reutilizable en diversos proyectos de la empresa.",
+          "8": "Implementación de funcionalidades en una plataforma web educativa con NextJS, NodeJS, ExpressJS, Docker y MongoDB."
         }
       },
       "freelance": {
-        "title": "Front-End - Freelance ",
+        "title": "Front-End - Freelance",
         "date": "Septiembre 2023 – Septiembre 2024",
         "items": {
-          "1": "Desarrollo de nuevas secciones para el Front-End de un Back-Office con ReactJS.",
-          "2": "Creación de una plataforma para la gestión de redes sociales de influencers usando NextJS y TypeScript."
+          "1": "Desarrollo de nuevas secciones en el Front-End de una plataforma de gestión de redes sociales de influencers con NextJS y TypeScript.",
+          "2": "Implementación de nuevas funcionalidades en el Back-Office de la misma plataforma utilizando ReactJS."
         }
       }
     }
   },
   "technologies": {
-    "title": "Tecnologías"
+    "title": "Tecnologías",
+    "categories": {
+      "frontEnd": "Front-End",
+      "backEnd": "Back-End",
+      "mobile": "Mobile",
+      "devOps": "DevOps",
+      "tools": "Herramientas"
+    }
   },
   "studies": {
     "title": "Estudios",
@@ -46,11 +67,53 @@
     },
     "downloadCv": "Descargar CV"
   },
-  "projects": {
-    "title": "Proyectos"
-  },
   "contacts": {
     "title": "Contacto",
     "desc": "Me interesan los proyectos freelance. Sin embargo, si tenés preguntas o propuestas de otro tipo, no dudes en contactarme."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "projectType": {
+      "back": "Back-End",
+      "front": "Front-End",
+      "mobile": "Mobile",
+      "design": "Diseño",
+      "ios": "iOS",
+      "android": "Android"
+    },
+    "gymback": {
+      "title": "GymBack - Backend para Gestión de Gimnasios",
+      "description": "Sistema backend para la gestión de gimnasios, permitiendo a usuarios y administradores administrar planes, rutinas y ejercicios. Desarrollado con Node.js, Express, MongoDB Atlas y TypeScript, siguiendo una arquitectura modular escalable."
+    },
+    "visortv_back": {
+      "title": "Visor TV - Backend",
+      "description": "Backend para la gestión modular de pantallas y su contenido, permitiendo a administradores y operadores gestionar widgets de clima, cámaras de seguridad y carruseles de información. Desarrollado con Node.js, Express, MongoDB Atlas y TypeScript"
+    },
+    "almotick_back": {
+      "title": "Almotick - Backend para Gestión de Eventos",
+      "description": "Plataforma backend para la gestión y venta de entradas de eventos, permitiendo a usuarios visualizar eventos destacados, adquirir entradas y gestionar eventos. Arquitectura moderna y escalable. Desarrollado con Python, Flask y MongoDB Atlas"
+    },
+    "hre": {
+      "title": "HRE - Gestión de Remates",
+      "description": "Aplicación web para la gestión de subastas de ganado, optimizando la administración de lotes, remates y visualización de catálogos. Desarrollado con tecnologías modernas y arquitectura limpia. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia."
+    },
+    "visortv_front": {
+      "title": "Visor TV - Administración de Pantallas",
+      "description": "Sistema de administración de pantallas con diferentes roles de usuario. Permite la creación y edición de pantallas con widgets de clima, cámaras en vivo y carruseles de información. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia"
+    },
+    "almotick_front": {
+      "title": "Almotick - Gestión de Eventos y Entradas",
+      "description": "Aplicación web para la gestión de eventos y venta de entradas, con una interfaz moderna y responsiva. Desarrollado con React y TypeScript. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia"
+    },
+    "gymapp": {
+      "title": "Gym App",
+      "description": "Aplicación móvil que permite a los usuarios gestionar su rutina de entrenamiento en un gimnasio, ofreciendo seguimiento personalizado y planificación de ejercicios. Desarrollado con React Native, Expo y TypeScript, siguiendo una arquitectura limpia"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Diseño web y mobile de este portfolio."
+    },
+    "viewProject": "Ver proyecto",
+    "viewRepository": "Ver repositorio"
   }
 }

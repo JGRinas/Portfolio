@@ -20,7 +20,7 @@ export const Presentation = () => {
           <TitleXL className="whitespace-nowrap">Benitez Rinas</TitleXL>
         </div>
         <Text className="mt-4">{t("desc")}</Text>
-        <div className="mt-8 flex gap-4 justify-center md:justify-start">
+        <div className="mt-8 flex gap-4 justify-center md:!justify-start">
           <Button
             variant="full"
             onClick={() => handleScrollToSection("aboutme")}

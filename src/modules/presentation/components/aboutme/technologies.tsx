@@ -77,7 +77,10 @@ export const Technologies = () => {
           <h3 className="text-xl font-bold mb-2">
             {t(`categories.${category}`)}
           </h3>
-          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+          <div
+            style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}
+            className="ml-2"
+          >
             {techs.map(({ icon, title }) => (
               <SlideIn key={title}>
                 <TechnologyCard icon={icon} title={title} />

@@ -12,6 +12,12 @@ export const CardContainer = styled.div`
   border-radius: 15px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05); /* 🔹 Se agranda un 5% */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 🔹 Aumenta la sombra */
+  }
 `;
 
 export const IconWrapper = styled.div`

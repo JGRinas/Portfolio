@@ -14,7 +14,7 @@ export const AboutMe = () => {
       <div>
         <article className="mb-4">
           <TitleL className="mb-4">{t("title")}</TitleL>
-          <Text>{t("desc")}</Text>
+          <Text className="ml-2">{t("desc")}</Text>
         </article>
         <Studies />
         <div className="hidden md:!block">

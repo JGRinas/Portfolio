@@ -13,6 +13,8 @@ interface ProjectCardProps {
   image: string;
   title: string;
   description: string;
+  repository?: string;
+  page?: string;
   onClick: () => void;
 }
 
@@ -20,9 +22,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   image,
   title,
   description,
+  repository,
+  page,
   onClick,
 }) => {
   const { t } = useTranslation("common", { keyPrefix: "projects" });
+
+  const buttonText = repository ? t("viewRepository") : t("viewProject");
+  const buttonUrl = repository ?? page;
 
   return (
     <button onClick={onClick}>
@@ -34,9 +41,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <Category className="line-clamp-3 overflow-hidden">
               {t(description)}
             </Category>
-            <Button variant="full" onClick={onClick}>
-              Ver proyecto
-            </Button>
+            {buttonUrl && (
+              <Button
+                variant="full"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  window.open(buttonUrl, "_blank");
+                }}
+              >
+                {buttonText}
+              </Button>
+            )}
           </CardText>
         </CardOverlay>
       </CardContainer>

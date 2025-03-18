@@ -112,6 +112,8 @@
     "portfolio": {
       "title": "Portfolio",
       "description": "Web and mobile design for this portfolio."
-    }
+    },
+    "viewProject": "View project",
+    "viewRepository": "View repository"
   }
 }

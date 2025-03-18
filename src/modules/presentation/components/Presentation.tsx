@@ -15,12 +15,12 @@ export const Presentation = () => {
     <PresentationContainer>
       <CodeBackgroundContent />
       <section>
-        <div>
+        <div className="mt-[-50px] md:mt-0">
           <TitleXL className="-mb-4">Juan Gabriel</TitleXL>
-          <TitleXL>Benitez Rinas</TitleXL>
+          <TitleXL className="whitespace-nowrap">Benitez Rinas</TitleXL>
         </div>
         <Text className="mt-4">{t("desc")}</Text>
-        <div className="mt-8 flex gap-4">
+        <div className="mt-8 flex gap-4 justify-center md:justify-start">
           <Button
             variant="full"
             onClick={() => handleScrollToSection("aboutme")}

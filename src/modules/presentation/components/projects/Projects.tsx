@@ -28,7 +28,7 @@ export const Projects = () => {
           selectedType={selectedType}
         />
 
-        <div className="flex justify-around mt-8">
+        <div className="flex justify-around mt-8 flex-col justify-center items-center gap-8 md:!flex-row">
           {selectedProjects.map((project) => (
             <FadeIn key={project.title}>
               <ProjectCard

@@ -6,5 +6,6 @@ export interface ProjectItem {
   description: string;
   technologies?: string[];
   repository?: string;
+  page?: string;
   image: string;
 }

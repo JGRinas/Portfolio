@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const TitleXL = styled.h1`
   font-size: 3.5rem;
   font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `;
 
 export const TitleL = styled.h2`

@@ -19,11 +19,11 @@ export const ProjectTypes = ({
   const { t } = useTranslation("common", { keyPrefix: "projects.projectType" });
 
   return (
-    <section className="flex mt-4 justify-around">
+    <section className="flex mt-4 justify-around overflow-x-scroll gap-8 md:overflow-x-hidden">
       {(isMobile ? mobileType : projectType).map((type) => (
         <TitleL
           key={type}
-          className="cursor-pointer"
+          className="cursor-pointer whitespace-nowrap"
           style={{
             color: selectedType === type ? "#000" : "#aaa",
           }}

@@ -30,7 +30,7 @@ export const Main = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 export const Footer = styled.footer`

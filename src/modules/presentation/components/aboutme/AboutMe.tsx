@@ -21,7 +21,7 @@ export const AboutMe = () => {
           <Technologies />
         </div>
       </div>
-      <div className="mt-[-30px] md:mt-0">
+      <div className="mt-[-30px] md:mt-0 ">
         <Experience />
         <div className="block md:!hidden">
           <Technologies />

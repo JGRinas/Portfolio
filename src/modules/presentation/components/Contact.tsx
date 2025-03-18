@@ -2,6 +2,7 @@ import { FunctionComponent, SVGProps } from "react";
 import { Text, TitleL, TitleS } from "../styled/ui/Text";
 import { EmailIcon, DiscordIcon } from "../../../assets/icons";
 import { useTranslation } from "react-i18next";
+import { useThemeContext } from "~/modules/infrastructure/hooks/useThemeContext";
 
 export const Contact = () => {
   const { t } = useTranslation("common", { keyPrefix: "contacts" });
@@ -28,9 +29,12 @@ interface IIconText {
   title: string;
 }
 
-const IconText = ({ icon: Icon, title }: IIconText) => (
-  <div className="flex justify-start items-center gap-4">
-    <Icon width={50} height={50} />
-    <TitleS>{title}</TitleS>
-  </div>
-);
+const IconText = ({ icon: Icon, title }: IIconText) => {
+  const { isDarkTheme } = useThemeContext();
+  return (
+    <div className="flex justify-start items-center gap-4">
+      <Icon width={50} height={50} fill={isDarkTheme ? "#252B42" : "#fff"} />
+      <TitleS>{title}</TitleS>
+    </div>
+  );
+};

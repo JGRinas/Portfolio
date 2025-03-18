@@ -6,12 +6,16 @@ import { Presentation } from "../components/Presentation";
 import { Projects } from "../components/projects/Projects";
 import { Footer, Header, Main } from "../styled/components/Container";
 import { HorizontalLine } from "../styled/components/Presentation";
+import ThemeSwitch from "../ui/ThemeSwitch";
 
 const Home = () => (
   <>
     <Header>
       <FadeIn delay={50} className="w-full">
-        <LanguageSwitcher />
+        <div className="flex justify-between items-center w-full">
+          <LanguageSwitcher />
+          <ThemeSwitch />
+        </div>
         <HorizontalLine />
         <Presentation />
       </FadeIn>

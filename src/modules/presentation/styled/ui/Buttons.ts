@@ -13,16 +13,17 @@ export const Button = styled.button<ButtonProps>`
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 
   /* Estilos según el prop variant */
-  background-color: ${({ variant }) =>
-    variant === "full" ? "#1E2433" : "transparent"};
-  color: ${({ variant }) => (variant === "full" ? "#fff" : "#1E2433")};
-  border: ${({ variant }) =>
-    variant === "outline" ? "2px solid #1E2433" : "none"};
+  background-color: ${({ theme, variant }) =>
+    variant === "full" ? theme.colors.primary : "transparent"};
+  color: ${({ theme, variant }) =>
+    variant === "full" ? theme.colors.secondary : theme.colors.primary};
+  border: ${({ theme, variant }) =>
+    variant === "outline" ? `2px solid ${theme.colors.primary}` : "none"};
 
   &:hover {
-    background-color: ${({ variant }) =>
-      variant === "full" ? "#2c3e50" : "#1E2433"};
-    color: #fff;
-    border-color: #2c3e50;
+    background-color: ${({ theme, variant }) =>
+      variant === "full" ? theme.colors.hover.primary : theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
+    border-color: ${({ theme }) => theme.colors.hover.primary};
   }
 `;

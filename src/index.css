@@ -29,9 +29,4 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: url("./assets/images/background.jpg");
-  background-position: center;
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-attachment: fixed;
 }

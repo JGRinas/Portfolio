@@ -1,6 +1,8 @@
 import Modal from "react-modal";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { Text, Title } from "../../styled/components/Project";
+import { useThemeContext } from "~/modules/infrastructure/hooks/useThemeContext";
 
 interface ProjectModalProps {
   project: any;
@@ -13,7 +15,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 }) => {
   const { t } = useTranslation("common", { keyPrefix: "projects" });
   const [isClosing, setIsClosing] = useState(false);
-
+  const { isDarkTheme } = useThemeContext();
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(() => {
@@ -28,7 +30,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       onRequestClose={handleClose}
       className={`relative bg-white rounded-2xl shadow-lg w-full max-w-[90vw] md:max-w-[800px] p-6 md:p-8 overflow-y-auto max-h-[90vh] transition-transform transform ${
         isClosing ? "animate-fadeOutScale" : "animate-fadeInScale"
-      }`}
+      } ${isDarkTheme ? "bg-[#2e2929]" : "bg-[#fff]"}`}
       overlayClassName={`fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center px-4 md:px-0 transition-opacity ${
         isClosing ? "opacity-0" : "opacity-100"
       }`}
@@ -36,7 +38,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
     >
       {/* Botón de cierre */}
       <button
-        className="absolute top-0 right-1 text-gray-600 hover:text-gray-900 text-2xl"
+        className="absolute top-0 right-2 text-gray-600 hover:text-gray-900 text-2xl"
         onClick={handleClose}
       >
         ✕
@@ -52,10 +54,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       </div>
 
       {/* Título y descripción */}
-      <h2 className="text-2xl font-bold mt-4 text-center">
+      <Title className="text-2xl font-bold mt-4 text-center">
         {t(project.title)}
-      </h2>
-      <p className="text-gray-700 mt-2 text-center">{t(project.description)}</p>
+      </Title>
+      <Text className="text-gray-700 mt-2 text-center">
+        {t(project.description)}
+      </Text>
     </Modal>
   );
 };

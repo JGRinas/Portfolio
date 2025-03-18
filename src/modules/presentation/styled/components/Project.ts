@@ -49,6 +49,13 @@ export const Title = styled.h3`
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: bold;
+  color: ${(props) => props.theme.colors.primary};
+`;
+
+export const Text = styled.p`
+  font-size: 14px;
+  font-weight: bold;
+  color: ${(props) => props.theme.colors.primary};
 `;
 
 export const Button = styled.button`

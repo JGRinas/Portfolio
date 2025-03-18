@@ -8,7 +8,6 @@ export const SwitchContainer = styled.div`
   &:hover {
     color: ${(props) => props.theme.colors.hover.primary};
   }
-  background-color: ${(props) => props.theme.colors.secondary};
   padding: 8px;
   border-radius: 5px;
 `;

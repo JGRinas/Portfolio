@@ -22,6 +22,8 @@ import {
   VueIcon,
 } from "../../../../assets/icons";
 import { useTranslation } from "react-i18next";
+import { FadeIn } from "../animations/fade-in";
+import { SlideIn } from "../animations/slide-in";
 
 const icons = [
   { icon: DockerIcon, title: "Docker" },
@@ -52,7 +54,9 @@ export const Technologies = () => {
       <TitleL className="mb-4">{t("title")}</TitleL>
       <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
         {icons.map(({ icon, title }) => (
-          <TechnologyCard key={title} icon={icon} title={title} />
+          <SlideIn key={title}>
+            <TechnologyCard icon={icon} title={title} />
+          </SlideIn>
         ))}
       </div>
     </article>

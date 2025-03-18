@@ -15,22 +15,36 @@
   "experience": {
     "title": "Experiencia",
     "experiences": {
+      "almoby": {
+        "title": "Desarrollador Full-Stack - Almoby Software Solutions",
+        "date": "Noviembre 2024 – Actualidad",
+        "items": {
+          "1": "Desarrollo del Front-End en React y el Back-End en Python para un sistema de tickets utilizado en eventos.",
+          "2": "Migración de DNS desde Hostinger a Cloudflare y despliegue de la aplicación en Railway.",
+          "3": "Desarrollo del Front-End de una plataforma consignataria a partir de diseños en Figma y documentación.",
+          "4": "Configuración de infraestructura en AWS, incluyendo Route 53, ACM, CloudFront y S3 con hosting estático."
+        }
+      },
       "macrointell": {
         "title": "Full-Stack & Mobile Developer - MacroIntell",
         "date": "Abril 2023 – Actualidad",
         "items": {
           "1": "Lidero el equipo de desarrollo Mobile, estableciendo objetivos de sprint y mentorando a desarrolladores trainee.",
-          "2": "Desarrollo de una billetera virtual con Expo y TypeScript, y de una app de e-commerce con React Native CLI, aplicando Clean Architecture.",
-          "3": "Creación librería UI para uso interno entre proyectos.",
-          "4": "Implementación de funcionalidades en una plataforma web educativa con NextJS y NodeJS."
+          "2": "Desarrollo de una billetera virtual con Expo y TypeScript, aplicando Clean Architecture y patrón Repositorio.",
+          "3": "Modificaciones nativas en iOS con Swift y en Android con Kotlin.",
+          "4": "Construcción de una app de marketplace con React Native y TypeScript, priorizando rendimiento y usabilidad.",
+          "5": "Implementación de pruebas unitarias con Jest para asegurar calidad y estabilidad.",
+          "6": "Publicación y mantenimiento de aplicaciones en Play Store y App Store, incluyendo distribución en pruebas internas y TestFlight.",
+          "7": "Desarrollo de una librería UI interna reutilizable en diversos proyectos de la empresa.",
+          "8": "Implementación de funcionalidades en una plataforma web educativa con NextJS, NodeJS, ExpressJS, Docker y MongoDB."
         }
       },
       "freelance": {
-        "title": "Front-End - Freelance ",
+        "title": "Front-End - Freelance",
         "date": "Septiembre 2023 – Septiembre 2024",
         "items": {
-          "1": "Desarrollo de nuevas secciones para el Front-End de un Back-Office con ReactJS.",
-          "2": "Creación de una plataforma para la gestión de redes sociales de influencers usando NextJS y TypeScript."
+          "1": "Desarrollo de nuevas secciones en el Front-End de una plataforma de gestión de redes sociales de influencers con NextJS y TypeScript.",
+          "2": "Implementación de nuevas funcionalidades en el Back-Office de la misma plataforma utilizando ReactJS."
         }
       }
     }
@@ -47,7 +61,15 @@
     "downloadCv": "Descargar CV"
   },
   "projects": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "projectType": {
+      "back": "Back-End",
+      "front": "Front-End",
+      "mobile": "Mobile",
+      "design": "Diseño",
+      "ios": "iOS",
+      "android": "Android"
+    }
   },
   "contacts": {
     "title": "Contacto",

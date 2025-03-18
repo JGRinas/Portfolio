@@ -15,7 +15,7 @@ export const Studies = () => {
         </li>
       </ul>
       <a href={CV} download>
-        <Button variant="outline" className="mt-8">
+        <Button variant="outline" className="mt-4">
           {t("downloadCv")}
         </Button>
       </a>

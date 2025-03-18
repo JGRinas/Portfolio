@@ -14,7 +14,4 @@ export const GlobalStyles = createGlobalStyle`
       fill: ${(props) => props.theme.colors.hover.primary};
     }
   }
-  h1, h2, h3, p {
-  color: ${(props) => props.theme.colors.primary};
-  }
 `;

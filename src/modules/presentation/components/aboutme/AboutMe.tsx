@@ -14,10 +14,10 @@ export const AboutMe = () => {
           <Text>{t("desc")}</Text>
         </article>
         <Technologies />
+        <Studies />
       </div>
       <div>
         <Experience />
-        <Studies />
       </div>
     </section>
   );

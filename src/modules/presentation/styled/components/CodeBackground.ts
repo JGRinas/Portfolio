@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CodeBackground = styled.div`
   position: absolute;
@@ -12,7 +12,7 @@ export const CodeBackground = styled.div`
   opacity: 0.1;
 
   pre {
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.primary};
     font-size: 1rem;
     white-space: pre-wrap;
     line-height: 1.5;

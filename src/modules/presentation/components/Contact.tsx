@@ -1,6 +1,6 @@
 import { FunctionComponent, SVGProps } from "react";
 import { Text, TitleL, TitleS } from "../styled/ui/Text";
-import { EmailIcon, DiscordIcon, LinkedinIcon } from "../../../assets/icons";
+import { EmailIcon, DiscordIcon } from "../../../assets/icons";
 import { useTranslation } from "react-i18next";
 
 export const Contact = () => {

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { TitleL } from "../../styled/ui/Text";
 import { MobileType, ProjectType } from "~/modules/domain/projects";
 
-const projectType = ["back", "front", "mobile", "design"];
+const projectType = ["front", "back", "mobile", "design"];
 const mobileType = ["ios", "android"];
 
 export const ProjectTypes = ({

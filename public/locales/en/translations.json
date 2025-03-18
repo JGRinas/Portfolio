@@ -50,7 +50,14 @@
     }
   },
   "technologies": {
-    "title": "Technologies"
+    "title": "Technologies",
+    "categories": {
+      "frontEnd": "Front-End",
+      "backEnd": "Back-End",
+      "mobile": "Mobile",
+      "devOps": "DevOps",
+      "tools": "Tools"
+    }
   },
   "studies": {
     "title": "Studies",
@@ -59,6 +66,10 @@
       "date": "February 2020 – Completed"
     },
     "downloadCv": "Download CV"
+  },
+  "contacts": {
+    "title": "Contact",
+    "desc": "I’m interested in freelance projects. However, if you have any questions or other proposals, feel free to contact me."
   },
   "projects": {
     "title": "Projects",
@@ -69,10 +80,38 @@
       "design": "Design",
       "ios": "iOS",
       "android": "Android"
+    },
+    "gymback": {
+      "title": "GymBack - Backend for Gym Management",
+      "description": "Backend system for gym management, allowing users and administrators to manage training plans, routines, and exercises. Developed with Node.js, Express, MongoDB Atlas, and TypeScript, following a scalable modular architecture."
+    },
+    "visortv_back": {
+      "title": "Visor TV - Backend",
+      "description": "Backend for modular screen management and its content, allowing administrators and operators to manage weather widgets, security cameras, and information carousels. Developed with Node.js, Express, MongoDB Atlas, and TypeScript."
+    },
+    "almotick_back": {
+      "title": "Almotick - Backend for Event Management",
+      "description": "Backend platform for managing and selling event tickets, allowing users to view featured events, purchase tickets, and manage event creation. Modern and scalable architecture. Developed with Python, Flask, and MongoDB Atlas."
+    },
+    "hre": {
+      "title": "HRE - Auction Management",
+      "description": "Web application for managing cattle auctions, optimizing lot administration, auctions, and catalog visualization. Developed with modern technologies and a clean architecture. Built with React, Vite, and TypeScript, following a clean architecture."
+    },
+    "visortv_front": {
+      "title": "Visor TV - Screen Administration",
+      "description": "Screen management system with different user roles. Allows the creation and editing of screens with weather widgets, live cameras, and information carousels. Developed with React, Vite, and TypeScript, following a clean architecture."
+    },
+    "almotick_front": {
+      "title": "Almotick - Event and Ticket Management",
+      "description": "Web application for managing events and ticket sales, featuring a modern and responsive interface. Developed with React and TypeScript. Built with React, Vite, and TypeScript, following a clean architecture."
+    },
+    "gymapp": {
+      "title": "Gym App",
+      "description": "Mobile application that allows users to manage their workout routine in a gym, offering personalized tracking and exercise planning. Developed with React Native, Expo, and TypeScript, following a clean architecture."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Web and mobile design for this portfolio."
     }
-  },
-  "contacts": {
-    "title": "Contact",
-    "desc": "I’m interested in freelance projects. However, if you have any questions or other proposals, feel free to contact me."
   }
 }

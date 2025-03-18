@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px;
-  width: 100px;
+  width: 110px;
   height: 140px;
   border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 15px;

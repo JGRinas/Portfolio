@@ -50,7 +50,14 @@
     }
   },
   "technologies": {
-    "title": "Tecnologías"
+    "title": "Tecnologías",
+    "categories": {
+      "frontEnd": "Front-End",
+      "backEnd": "Back-End",
+      "mobile": "Mobile",
+      "devOps": "DevOps",
+      "tools": "Herramientas"
+    }
   },
   "studies": {
     "title": "Estudios",
@@ -59,6 +66,10 @@
       "date": "Febrero 2020 – Finalizado"
     },
     "downloadCv": "Descargar CV"
+  },
+  "contacts": {
+    "title": "Contacto",
+    "desc": "Me interesan los proyectos freelance. Sin embargo, si tenés preguntas o propuestas de otro tipo, no dudes en contactarme."
   },
   "projects": {
     "title": "Proyectos",
@@ -69,10 +80,38 @@
       "design": "Diseño",
       "ios": "iOS",
       "android": "Android"
+    },
+    "gymback": {
+      "title": "GymBack - Backend para Gestión de Gimnasios",
+      "description": "Sistema backend para la gestión de gimnasios, permitiendo a usuarios y administradores administrar planes, rutinas y ejercicios. Desarrollado con Node.js, Express, MongoDB Atlas y TypeScript, siguiendo una arquitectura modular escalable."
+    },
+    "visortv_back": {
+      "title": "Visor TV - Backend",
+      "description": "Backend para la gestión modular de pantallas y su contenido, permitiendo a administradores y operadores gestionar widgets de clima, cámaras de seguridad y carruseles de información. Desarrollado con Node.js, Express, MongoDB Atlas y TypeScript"
+    },
+    "almotick_back": {
+      "title": "Almotick - Backend para Gestión de Eventos",
+      "description": "Plataforma backend para la gestión y venta de entradas de eventos, permitiendo a usuarios visualizar eventos destacados, adquirir entradas y gestionar eventos. Arquitectura moderna y escalable. Desarrollado con Python, Flask y MongoDB Atlas"
+    },
+    "hre": {
+      "title": "HRE - Gestión de Remates",
+      "description": "Aplicación web para la gestión de subastas de ganado, optimizando la administración de lotes, remates y visualización de catálogos. Desarrollado con tecnologías modernas y arquitectura limpia. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia."
+    },
+    "visortv_front": {
+      "title": "Visor TV - Administración de Pantallas",
+      "description": "Sistema de administración de pantallas con diferentes roles de usuario. Permite la creación y edición de pantallas con widgets de clima, cámaras en vivo y carruseles de información. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia"
+    },
+    "almotick_front": {
+      "title": "Almotick - Gestión de Eventos y Entradas",
+      "description": "Aplicación web para la gestión de eventos y venta de entradas, con una interfaz moderna y responsiva. Desarrollado con React y TypeScript. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia"
+    },
+    "gymapp": {
+      "title": "Gym App",
+      "description": "Aplicación móvil que permite a los usuarios gestionar su rutina de entrenamiento en un gimnasio, ofreciendo seguimiento personalizado y planificación de ejercicios. Desarrollado con React Native, Expo y TypeScript, siguiendo una arquitectura limpia"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Diseño web y mobile de este portfolio."
     }
-  },
-  "contacts": {
-    "title": "Contacto",
-    "desc": "Me interesan los proyectos freelance. Sin embargo, si tenés preguntas o propuestas de otro tipo, no dudes en contactarme."
   }
 }

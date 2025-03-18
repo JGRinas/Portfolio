@@ -23,3 +23,6 @@ export { default as ReactIcon } from "./technologies/react.svg?react";
 export { default as SqlIcon } from "./technologies/sql.svg?react";
 export { default as TestingLibraryIcon } from "./technologies/testing-library.svg?react";
 export { default as VueIcon } from "./technologies/vue.svg?react";
+export { default as AngularIcon } from "./technologies/angular.svg?react";
+export { default as AWSIcon } from "./technologies/aws.svg?react";
+export { default as PythonIcon } from "./technologies/python.svg?react";

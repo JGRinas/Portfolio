@@ -6,7 +6,7 @@ import CV from "../../../../assets/documents/CV-JuanGabrielBenitezRinas.pdf";
 export const Studies = () => {
   const { t } = useTranslation("common", { keyPrefix: "studies" });
   return (
-    <article>
+    <article className="flex items-end justify-between mb-4">
       <ul className="flex flex-col gap-4 mt-4">
         <li>
           <TitleL>{t("title")}</TitleL>

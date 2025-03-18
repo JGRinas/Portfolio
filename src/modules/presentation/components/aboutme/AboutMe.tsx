@@ -13,8 +13,8 @@ export const AboutMe = () => {
           <TitleL className="mb-4">{t("title")}</TitleL>
           <Text>{t("desc")}</Text>
         </article>
-        <Technologies />
         <Studies />
+        <Technologies />
       </div>
       <div>
         <Experience />

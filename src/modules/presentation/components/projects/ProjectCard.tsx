@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   CardContainer,
   CardImage,
@@ -21,18 +22,24 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   onClick,
 }) => {
+  const { t } = useTranslation("common", { keyPrefix: "projects" });
+
   return (
-    <CardContainer>
-      <CardImage src={image} alt={title} />
-      <CardOverlay>
-        <CardText>
-          <Title>{title}</Title>
-          <Category>{description}</Category>
-          <Button variant="full" onClick={onClick}>
-            Ver proyecto
-          </Button>
-        </CardText>
-      </CardOverlay>
-    </CardContainer>
+    <button onClick={onClick}>
+      <CardContainer>
+        <CardImage src={image} alt={title} />
+        <CardOverlay>
+          <CardText>
+            <Title>{t(title)}</Title>
+            <Category className="line-clamp-3 overflow-hidden">
+              {t(description)}
+            </Category>
+            <Button variant="full" onClick={onClick}>
+              Ver proyecto
+            </Button>
+          </CardText>
+        </CardOverlay>
+      </CardContainer>
+    </button>
   );
 };

@@ -21,21 +21,33 @@ export const ThemeContext = createContext<ThemeContextProps | undefined>(
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  // 🔹 Detectar el tema del navegador por defecto
-  const getPreferredTheme = () =>
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  // 🔹 Obtener el tema guardado en `localStorage` o el del sistema
+  const getStoredTheme = () => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) return storedTheme === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  };
 
-  // 🔹 Inicializa el estado con el tema del sistema
-  const [isDarkTheme, setIsDarkTheme] = useState(getPreferredTheme);
+  // 🔹 Estado del tema
+  const [isDarkTheme, setIsDarkTheme] = useState(getStoredTheme);
 
-  const toggleTheme = () => setIsDarkTheme((prevTheme) => !prevTheme);
+  // 🔹 Función para cambiar el tema y guardarlo
+  const toggleTheme = () => {
+    setIsDarkTheme((prevTheme) => {
+      const newTheme = !prevTheme;
+      localStorage.setItem("theme", newTheme ? "dark" : "light");
+      return newTheme;
+    });
+  };
 
-  // 🔹 Agregar listener para detectar cambios de tema en tiempo real
+  // 🔹 Solo cambiar el tema del sistema si **no** hay preferencia guardada
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
     const handleThemeChange = (e: MediaQueryListEvent) => {
-      setIsDarkTheme(e.matches);
+      if (!localStorage.getItem("theme")) {
+        setIsDarkTheme(e.matches);
+      }
     };
 
     mediaQuery.addEventListener("change", handleThemeChange);

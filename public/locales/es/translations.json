@@ -19,10 +19,8 @@
         "title": "Desarrollador Full-Stack - Almoby Software Solutions",
         "date": "Noviembre 2024 – Actualidad",
         "items": {
-          "1": "Desarrollo del Front-End en React y el Back-End en Python para un sistema de tickets utilizado en eventos.",
-          "2": "Migración de DNS desde Hostinger a Cloudflare y despliegue de la aplicación en Railway.",
-          "3": "Desarrollo del Front-End de una plataforma consignataria a partir de diseños en Figma y documentación.",
-          "4": "Configuración de infraestructura en AWS, incluyendo Route 53, ACM, CloudFront y S3 con hosting estático."
+          "1": "Creé el Front-End en React y el Back-End en Python para un sistema de tickets utilizado en diversos eventos (carnavales del interior de Corrientes, boliches,recitales, etc), migrando los DNS desde Hostinguer a Cloudflare y desplegando la aplicación con Cloudflare y Railway",
+          "2": "Desarrollé el Front-End de una plataforma consignataria a partir de diseños en Figma y documentaciones. Además, configuré la infraestructura de hosting en AWS para la aplicación: \n\nMigré el dominio a Route 53, agregando los registros necesarios y delegando el DNS en NIC.ar.\nSolicité certificados SSL en ACM (us-east-1) y configuré CloudFront para servir el sitio con HTTPS\nImplementé el despliegue en S3 con hosting estático, asegurando el enrutamiento de las rutas internas de React."
         }
       },
       "macrointell": {
@@ -30,13 +28,11 @@
         "date": "Abril 2023 – Actualidad",
         "items": {
           "1": "Lidero el equipo de desarrollo Mobile, estableciendo objetivos de sprint y mentorando a desarrolladores trainee.",
-          "2": "Desarrollo de una billetera virtual con Expo y TypeScript, aplicando Clean Architecture y patrón Repositorio.",
-          "3": "Modificaciones nativas en iOS con Swift y en Android con Kotlin.",
-          "4": "Construcción de una app de marketplace con React Native y TypeScript, priorizando rendimiento y usabilidad.",
-          "5": "Implementación de pruebas unitarias con Jest para asegurar calidad y estabilidad.",
-          "6": "Publicación y mantenimiento de aplicaciones en Play Store y App Store, incluyendo distribución en pruebas internas y TestFlight.",
-          "7": "Desarrollo de una librería UI interna reutilizable en diversos proyectos de la empresa.",
-          "8": "Implementación de funcionalidades en una plataforma web educativa con NextJS, NodeJS, ExpressJS, Docker y MongoDB."
+          "2": "Desarrollé una billetera virtual con Expo y TypeScript, aplicando principios de Clean Architecture y patrón Repositorio, realizando modificaciones a nivel nativo para iOS con Swift y para Android con Kotlin.",
+          "3": "Construí una app de marketplace con React Native y TypeScript, priorizando rendimiento y usabilidad. Implementé pruebas unitarias con Jest.",
+          "4": "Implementé el proceso de distribución de las apps en Android (pruebas internas) y iOS (TestFlight), y me encargué del proceso de enviar las aplicaciones a revisión para su posterior aprobación.",
+          "5": "Implementé una librería UI interna reutilizable en diferentes proyectos de la empresa.",
+          "6": "Colaboré en el desarrollo de una plataforma web educativa con NextJS, NodeJS, ExpressJS, Docker y MongoDB, orientada a microservicios y con gestión de contenido a través de un Back-Office."
         }
       },
       "freelance": {

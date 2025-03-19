@@ -13,8 +13,8 @@ export const Contact = () => {
       className="grid grid-cols-1 md:grid-cols-2 gap-[50px]"
     >
       <div>
-        <TitleL>{t("title")}</TitleL>
-        <Text>{t("desc")}</Text>
+        <TitleL className="text-center md:text-start">{t("title")}</TitleL>
+        <Text className="text-center md:text-start">{t("desc")}</Text>
       </div>
       <div className="flex flex-col md:flex-row items-center gap-4">
         <IconText icon={DiscordIcon} title="juanGBR#7962" />

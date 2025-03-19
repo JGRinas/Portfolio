@@ -22,7 +22,7 @@ export const Projects = () => {
   return (
     <>
       <section className="flex flex-col mt-8 justify-start w-[100%]">
-        <TitleL>{t("title")}</TitleL>
+        <TitleL className="text-center md:text-start">{t("title")}</TitleL>
         <ProjectTypes
           handleClick={handleTypeClick}
           selectedType={selectedType}

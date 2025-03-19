@@ -21,9 +21,7 @@ const Home = () => (
       </FadeIn>
     </Header>
     <Main>
-      <FadeIn delay={50} className="w-full">
-        <AboutMe />
-      </FadeIn>
+      <AboutMe />
       <FadeIn delay={50} className="w-full">
         <Projects />
       </FadeIn>

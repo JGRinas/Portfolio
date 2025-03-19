@@ -5,7 +5,7 @@ export const Experience = () => {
   const { t } = useTranslation("common", { keyPrefix: "experience" });
   return (
     <article className="mb-4">
-      <TitleL>{t("title")}</TitleL>
+      <TitleL className="text-center md:text-start">{t("title")}</TitleL>
       <TitleM>{t("experiences.almoby.title")}</TitleM>
       <TitleS>{t("experiences.almoby.date")}</TitleS>
       <ul className="flex flex-col gap-4 mt-4 ml-4">

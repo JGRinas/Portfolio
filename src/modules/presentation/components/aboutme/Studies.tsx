@@ -7,7 +7,7 @@ export const Studies = () => {
   const { t } = useTranslation("common", { keyPrefix: "studies" });
   return (
     <article className="flex justify-between mb-4 flex-col md:flex-row ">
-      <TitleL>{t("title")}</TitleL>
+      <TitleL className="text-center md:text-start">{t("title")}</TitleL>
       <ul className="flex flex-col gap-4 ml-2 mt-2">
         <li>
           <TitleM>{t("analist.title")}</TitleM>

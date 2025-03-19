@@ -12,7 +12,7 @@ export const PresentationContainer = styled.div`
     flex-direction: column-reverse;
     text-align: center;
     padding: 0;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     margin-top: 2rem;
   }
 `;

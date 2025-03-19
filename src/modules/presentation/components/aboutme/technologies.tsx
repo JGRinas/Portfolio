@@ -70,16 +70,19 @@ export const Technologies = () => {
 
   return (
     <article>
-      <TitleL className="mb-4">{t("title")}</TitleL>
+      <TitleL className="mb-4 text-center md:text-start">{t("title")}</TitleL>
 
       {Object.entries(technologies).map(([category, techs]) => (
-        <section key={category} className="mb-6">
+        <section
+          key={category}
+          className="mb-6 flex flex-col items-center md:!items-start "
+        >
           <h3 className="text-xl font-bold mb-2">
             {t(`categories.${category}`)}
           </h3>
           <div
-            style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}
-            className="ml-2"
+            style={{ gap: "20px", flexWrap: "wrap" }}
+            className="ml-2 flex justify-center md:!justify-start"
           >
             {techs.map(({ icon, title }) => (
               <SlideIn key={title}>

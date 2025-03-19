@@ -16,6 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    
     background: ${(props) => props.theme.colors.secondary};
     background-image: ${(props) => `url(${props.theme.background})`}; 
     background-position: center;
@@ -23,8 +24,13 @@ export const GlobalStyles = createGlobalStyle`
     background-size: cover;
     background-attachment: fixed;
 
+    /* 🔹 Si el tamaño de pantalla es menor a 768px, usa un gradiente en lugar de imagen */
     @media (max-width: 768px) {
       margin: 0;
+      background-image: ${(props) => props.theme.gradients.mobileBackground};
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
   }
 

@@ -12,6 +12,9 @@ export const lightTheme: DefaultTheme = {
       secondary: "#171717",
     },
   },
+  gradients: {
+    mobileBackground: "linear-gradient(135deg, #ffffff,#aca6a6)", // 🔹 Fondo claro para móviles
+  },
 };
 
 export const darkTheme: DefaultTheme = {
@@ -23,5 +26,8 @@ export const darkTheme: DefaultTheme = {
       primary: "#2C3E50",
       secondary: "#3A506B",
     },
+  },
+  gradients: {
+    mobileBackground: "linear-gradient(135deg,#151e27,#0c0b0b)", // 🔹 Fondo oscuro para móviles
   },
 };

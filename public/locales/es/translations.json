@@ -234,7 +234,7 @@
       },
       "passlp": {
         "title": "PassLP",
-        "description": "Ticketera web para eventos hípicos, con gestión de eventos, lotes, checkout, usuarios, roles, invitaciones, RRPP y despliegue cloud."
+        "description": "Ticketera web para eventos, con gestión de eventos, lotes, checkout, usuarios, roles, invitaciones, RRPP y despliegue cloud."
       },
       "visortv": {
         "title": "Visor TV - Screen Administration",

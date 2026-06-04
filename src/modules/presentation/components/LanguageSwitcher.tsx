@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { Option, Select } from "../styled/ui/Select";
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n, t } = useTranslation("common", { keyPrefix: "language" });
@@ -10,10 +9,15 @@ const LanguageSwitcher: React.FC = () => {
   };
 
   return (
-    <Select value={currentLanguage} onChange={changeLanguage}>
-      <Option value="en">{t("en")}</Option>
-      <Option value="es">{t("es")}</Option>
-    </Select>
+    <select
+      value={currentLanguage}
+      onChange={changeLanguage}
+      aria-label={t("ariaLabel")}
+      className="cursor-pointer rounded-lg border border-border-light bg-transparent px-2 py-1.5 text-xs font-semibold text-text-lightPrimary transition-colors hover:border-accent-blue focus:border-accent-blue focus:outline-none focus:ring-1 focus:ring-accent-blue dark:border-border-dark dark:text-text-darkPrimary md:text-sm"
+    >
+      <option value="en">{t("en")}</option>
+      <option value="es">{t("es")}</option>
+    </select>
   );
 };
 

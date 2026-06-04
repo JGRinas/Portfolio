@@ -2,6 +2,7 @@ import "styled-components";
 
 declare module "styled-components" {
   export interface DefaultTheme {
+    background: string;
     colors: {
       primary: string;
       secondary: string;
@@ -9,6 +10,9 @@ declare module "styled-components" {
         primary: string;
         secondary: string;
       };
+    };
+    gradients: {
+      mobileBackground: string;
     };
   }
 }

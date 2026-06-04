@@ -6,7 +6,6 @@ export const StyledContainer = styled.div`
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
-  min-height: 70vh;
 `;
 
 export const Header = styled.header`
@@ -28,9 +27,9 @@ export const Header = styled.header`
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+  overflow-x: clip;
 `;
 
 export const Footer = styled.footer`

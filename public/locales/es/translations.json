@@ -1,49 +1,196 @@
 {
   "language": {
-    "en": "US - English",
-    "es": "ES - Español"
+    "en": "US - EN",
+    "es": "ES - ES",
+    "ariaLabel": "Seleccionar idioma"
+  },
+  "nav": {
+    "ariaLabel": "Navegación principal",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "stack": "Stack",
+    "contact": "Contacto"
+  },
+  "theme": {
+    "toggle": "Cambiar tema claro/oscuro"
   },
   "presentation": {
-    "desc": "Desarrollador de páginas web & aplicaciones móviles",
-    "btnAbout": "Sobre mi",
-    "btnContact": "Contacto"
+    "badge": "FULL-STACK & MOBILE DEVELOPER",
+    "desc": "Construyo aplicaciones web y mobile performantes que resuelven problemas reales. Especializado en React, React Native, TypeScript, Node.js y despliegues en AWS, Cloudflare, Railway, Hostinger y Vercel.",
+    "btnProjects": "Ver proyectos",
+    "btnCv": "Descargar CV",
+    "btnLinkedin": "LinkedIn"
+  },
+  "heroStats": {
+    "experience": {
+      "label": "Años de experiencia",
+      "desc": "Construyendo apps en producción"
+    },
+    "projects": {
+      "value": "30+",
+      "label": "Proyectos completados",
+      "desc": "De inicio a producción: iOS, Android, front, back y desktop"
+    },
+    "mobileLead": {
+      "value": "5+",
+      "label": "Apps mobile publicadas",
+      "desc": "App Store y Play Store, de cero a publicación"
+    },
+    "cloud": {
+      "value": "Multi-cloud",
+      "label": "Cloud & DevOps",
+      "desc": "AWS, Cloudflare, Railway, Hostinger y Vercel"
+    }
   },
   "aboutMe": {
     "title": "Sobre Mí",
-    "desc": "Soy Juan Gabriel Bentiez Rinas, desarrollador Full-Stack y Mobile con más de 2 años de experiencia. Graduado como Analista programador universitario en la Universidad Nacional del Nordeste (UNNE), me gusta aprender nuevas tecnologías y explorar herramientas innovadoras."
+    "desc": "Soy Juan Gabriel Benitez Rinas, desarrollador Full-Stack y Mobile con más de {{years}} años de experiencia. Graduado como Analista Programador Universitario en la Universidad Nacional del Nordeste (UNNE). Disfruto aprender nuevas tecnologías y construir herramientas innovadoras.",
+    "passion": "Apasionado por código limpio, performance y buena UX."
+  },
+  "education": {
+    "title": "Formación",
+    "degree": "Analista Programador Universitario",
+    "institution": "Universidad Nacional del Nordeste",
+    "date": "Finalizado · Febrero 2020",
+    "desc": "Formación universitaria enfocada en programación, bases de datos, análisis de sistemas y fundamentos matemáticos aplicados al desarrollo de software.",
+    "viewDegree": "Ver título",
+    "modalTitle": "Título universitario",
+    "closeModal": "Cerrar"
   },
   "experience": {
     "title": "Experiencia",
-    "experiences": {
-      "almoby": {
-        "title": "Desarrollador Full-Stack - Almoby Software Solutions",
-        "date": "Noviembre 2024 – Actualidad",
-        "items": {
-          "1": "Creé el Front-End en React y el Back-End en Python para un sistema de tickets utilizado en diversos eventos (carnavales del interior de Corrientes, boliches,recitales, etc), migrando los DNS desde Hostinguer a Cloudflare y desplegando la aplicación con Cloudflare y Railway",
-          "2": "Desarrollé el Front-End de una plataforma consignataria a partir de diseños en Figma y documentaciones. Además, configuré la infraestructura de hosting en AWS para la aplicación: \n\nMigré el dominio a Route 53, agregando los registros necesarios y delegando el DNS en NIC.ar.\nSolicité certificados SSL en ACM (us-east-1) y configuré CloudFront para servir el sitio con HTTPS\nImplementé el despliegue en S3 con hosting estático, asegurando el enrutamiento de las rutas internas de React."
-        }
+    "viewFull": "Ver trayectoria completa",
+    "viewLess": "Ver menos",
+    "viewResume": "Ver CV completo",
+    "items": [
+      {
+        "company": "Zenta Group",
+        "role": "Desarrollador Mobile",
+        "employmentType": "Jornada completa",
+        "date": "may. 2025 - actualidad",
+        "location": "Santiago, Chile · En remoto",
+        "summary": "Colaboro con el cliente CCU en el desarrollo de su aplicación mobile, con foco en escalabilidad, performance y experiencia de usuario.",
+        "bullets": [
+          "Desarrollo de funcionalidades con React Native, Expo y TypeScript.",
+          "Manejo de bases de datos CouchDB y WatermelonDB, priorizando el uso offline.",
+          "Integraciones con Odoo para optimizar flujos de negocio.",
+          "Trabajo en equipo con desarrolladores y QA."
+        ],
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "CouchDB",
+          "WatermelonDB",
+          "Odoo"
+        ]
       },
-      "macrointell": {
-        "title": "Full-Stack & Mobile Developer - MacroIntell",
-        "date": "Abril 2023 – Actualidad",
-        "items": {
-          "1": "Lidero el equipo de desarrollo Mobile, estableciendo objetivos de sprint y mentorando a desarrolladores trainee.",
-          "2": "Desarrollé una billetera virtual con Expo y TypeScript, aplicando principios de Clean Architecture y patrón Repositorio, realizando modificaciones a nivel nativo para iOS con Swift y para Android con Kotlin.",
-          "3": "Construí una app de marketplace con React Native y TypeScript, priorizando rendimiento y usabilidad. Implementé pruebas unitarias con Jest.",
-          "4": "Implementé el proceso de distribución de las apps en Android (pruebas internas) y iOS (TestFlight), y me encargué del proceso de enviar las aplicaciones a revisión para su posterior aprobación.",
-          "5": "Implementé una librería UI interna reutilizable en diferentes proyectos de la empresa.",
-          "6": "Colaboré en el desarrollo de una plataforma web educativa con NextJS, NodeJS, ExpressJS, Docker y MongoDB, orientada a microservicios y con gestión de contenido a través de un Back-Office."
-        }
+      {
+        "company": "Almoby Software Solutions",
+        "role": "Desarrollador Full Stack",
+        "employmentType": "Jornada parcial",
+        "date": "nov. 2024 - dic. 2025",
+        "location": "Curuzú Cuatiá, Corrientes, Argentina · En remoto",
+        "summary": "Participé en múltiples proyectos web y mobile para clientes de distintos rubros, trabajando en frontend, backend, bases de datos y despliegues cloud.",
+        "bullets": [
+          "Desarrollo de HRE Consignataria, plataforma de gestión de remates de lotes y cabezas de ganado.",
+          "Desarrollo de Almotick, sistema de venta de entradas para eventos con checkout, notificaciones y escaneo de tickets.",
+          "Migración y despliegue de aplicaciones en AWS, Railway y Cloudflare.",
+          "Integración de APIs de terceros y optimización de experiencia de usuario."
+        ],
+        "technologies": [
+          "React",
+          "Vite",
+          "Node.js",
+          "Python",
+          "Flask",
+          "MongoDB",
+          "AWS",
+          "Railway",
+          "Cloudflare",
+          "S3",
+          "CloudFront",
+          "ECS",
+          "ECR",
+          "Route 53"
+        ]
       },
-      "freelance": {
-        "title": "Front-End - Freelance",
-        "date": "Septiembre 2023 – Septiembre 2024",
-        "items": {
-          "1": "Desarrollo de nuevas secciones en el Front-End de una plataforma de gestión de redes sociales de influencers con NextJS y TypeScript.",
-          "2": "Implementación de nuevas funcionalidades en el Back-Office de la misma plataforma utilizando ReactJS."
-        }
+      {
+        "company": "Macro Intell SA",
+        "role": "Mobile · Liderazgo · Front-End",
+        "employmentType": "Jornada completa",
+        "date": "abr. 2023 - oct. 2025",
+        "location": "Corrientes, Argentina · Híbrido",
+        "summary": "Desarrollo mobile y web para la industria agro, liderazgo de equipo mobile y publicación en tiendas de aplicaciones.",
+        "subroles": [
+          {
+            "role": "Desarrollador Mobile",
+            "date": "abr. 2023 - oct. 2025",
+            "summary": "Participé en el desarrollo de aplicaciones móviles orientadas a la industria agro en Brasil, enfocadas en escalabilidad, experiencia de usuario y publicación en tiendas.",
+            "bullets": [
+              "Desarrollo con React Native y Expo, aplicando TypeScript para código mantenible y escalable.",
+              "Ajustes nativos con Swift en iOS y Kotlin en Android.",
+              "Implementación de servicios de terceros.",
+              "Implementación de tests unitarios con Jest.",
+              "Implementación de notificaciones push con Firebase.",
+              "Gestión del proceso de publicación en Google Play y App Store."
+            ],
+            "technologies": [
+              "React Native",
+              "Expo",
+              "TypeScript",
+              "Swift",
+              "Kotlin",
+              "Jest",
+              "Firebase",
+              "Google Play",
+              "App Store"
+            ]
+          },
+          {
+            "role": "Líder de equipo Mobile",
+            "date": "jun. 2024 - ago. 2025",
+            "summary": "Coordiné el equipo mobile, ayudando en la organización diaria, definición de tareas, soporte técnico y gestión de despliegues.",
+            "bullets": [
+              "Definición y estimación de historias de usuario.",
+              "División de tareas.",
+              "Organización de sprints bajo Scrum.",
+              "Coordinación de demos y seguimiento de avances.",
+              "Capacitación de nuevos integrantes y soporte al equipo.",
+              "Gestión de despliegues a producción en Google Play y App Store."
+            ],
+            "technologies": [
+              "React Native",
+              "Scrum",
+              "Play Store",
+              "App Store",
+              "Team Leadership"
+            ]
+          },
+          {
+            "role": "Desarrollador Front End",
+            "date": "abr. 2023 - may. 2025",
+            "summary": "Trabajé en la parte visual de aplicaciones web, construyendo interfaces rápidas, prolijas y fáciles de usar.",
+            "bullets": [
+              "Desarrollo de pantallas con React, Next.js y TypeScript.",
+              "Creación de componentes reutilizables.",
+              "Optimización de performance, SEO y accesibilidad.",
+              "Participación en TodoAgro web y Facultad de Derecho."
+            ],
+            "technologies": [
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Node.js",
+              "Express",
+              "SEO",
+              "Accessibility"
+            ]
+          }
+        ]
       }
-    }
+    ]
   },
   "technologies": {
     "title": "Tecnologías",
@@ -68,48 +215,123 @@
     "desc": "Me interesan los proyectos freelance. Sin embargo, si tenés preguntas o propuestas de otro tipo, no dudes en contactarme."
   },
   "projects": {
-    "title": "Proyectos",
-    "projectType": {
-      "back": "Back-End",
-      "front": "Front-End",
-      "mobile": "Mobile",
-      "design": "Diseño",
-      "ios": "iOS",
-      "android": "Android"
-    },
-    "gymback": {
-      "title": "GymBack - Backend para Gestión de Gimnasios",
-      "description": "Sistema backend para la gestión de gimnasios, permitiendo a usuarios y administradores administrar planes, rutinas y ejercicios. Desarrollado con Node.js, Express, MongoDB Atlas y TypeScript, siguiendo una arquitectura modular escalable."
-    },
-    "visortv_back": {
-      "title": "Visor TV - Backend",
-      "description": "Backend para la gestión modular de pantallas y su contenido, permitiendo a administradores y operadores gestionar widgets de clima, cámaras de seguridad y carruseles de información. Desarrollado con Node.js, Express, MongoDB Atlas y TypeScript"
-    },
-    "almotick_back": {
-      "title": "Almotick - Backend para Gestión de Eventos",
-      "description": "Plataforma backend para la gestión y venta de entradas de eventos, permitiendo a usuarios visualizar eventos destacados, adquirir entradas y gestionar eventos. Arquitectura moderna y escalable. Desarrollado con Python, Flask y MongoDB Atlas"
-    },
-    "hre": {
-      "title": "HRE - Gestión de Remates",
-      "description": "Aplicación web para la gestión de subastas de ganado, optimizando la administración de lotes, remates y visualización de catálogos. Desarrollado con tecnologías modernas y arquitectura limpia. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia."
-    },
-    "visortv_front": {
-      "title": "Visor TV - Administración de Pantallas",
-      "description": "Sistema de administración de pantallas con diferentes roles de usuario. Permite la creación y edición de pantallas con widgets de clima, cámaras en vivo y carruseles de información. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia"
-    },
-    "almotick_front": {
-      "title": "Almotick - Gestión de Eventos y Entradas",
-      "description": "Aplicación web para la gestión de eventos y venta de entradas, con una interfaz moderna y responsiva. Desarrollado con React y TypeScript. Desarrollado con React, Vite y TypeScript, siguiendo una arquitectura limpia"
-    },
-    "gymapp": {
-      "title": "Gym App",
-      "description": "Aplicación móvil que permite a los usuarios gestionar su rutina de entrenamiento en un gimnasio, ofreciendo seguimiento personalizado y planificación de ejercicios. Desarrollado con React Native, Expo y TypeScript, siguiendo una arquitectura limpia"
-    },
-    "portfolio": {
-      "title": "Portfolio",
-      "description": "Diseño web y mobile de este portfolio."
-    },
+    "title": "Proyectos destacados",
+    "viewAll": "Ver todos los proyectos",
     "viewProject": "Ver proyecto",
-    "viewRepository": "Ver repositorio"
+    "items": {
+      "almotick": {
+        "title": "Almotick",
+        "description": "Plataforma de gestión y venta de entradas para eventos, con checkout, colaboradores, escaneo de tickets, notificaciones e infraestructura cloud."
+      },
+      "hre": {
+        "title": "HRE Auction Management",
+        "description": "Aplicación web para gestión de remates de ganado, lotes, administración de subastas y usuarios."
+      },
+      "passlp": {
+        "title": "PassLP",
+        "description": "Ticketera web para eventos hípicos, con gestión de eventos, lotes, checkout, usuarios, roles, invitaciones, RRPP y despliegue cloud."
+      },
+      "visortv": {
+        "title": "Visor TV - Screen Administration",
+        "description": "Sistema de administración de pantallas con roles. Crear, editar y monitorizar pantallas con contenido multimedia."
+      },
+      "anavir": {
+        "title": "AnaVir SRL"
+      },
+      "posmart": {
+        "title": "Posmart"
+      },
+      "gillette": {
+        "title": "Gillette Beard Filter"
+      },
+      "todoagro": {
+        "title": "TodoAgro Mobile"
+      },
+      "agrocarteira": {
+        "title": "AgroCarteira"
+      },
+      "derecho": {
+        "title": "Facultad de Derecho"
+      },
+      "postman": {
+        "title": "Postman Collections",
+        "subtitle": "Pruebas de API"
+      },
+      "figma": {
+        "title": "Figma UI Kits",
+        "subtitle": "Sistema de diseño"
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack tecnológico",
+    "subtitle": "Siempre aprendiendo, siempre construyendo.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Database",
+      "devOps": "DevOps & Cloud",
+      "tools": "Tools"
+    },
+    "items": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "tailwindcss": "Tailwind CSS",
+      "vite": "Vite",
+      "angular": "Angular",
+      "vuejs": "Vue.js",
+      "nodejs": "Node.js",
+      "express": "Express",
+      "python": "Python",
+      "php": "PHP",
+      "nestjs": "NestJS",
+      "reactNative": "React Native",
+      "expo": "Expo",
+      "kotlin": "Kotlin",
+      "swift": "Swift",
+      "mongodb": "MongoDB",
+      "mysql": "MySQL",
+      "postgresql": "PostgreSQL",
+      "firebase": "Firebase",
+      "couchdb": "CouchDB",
+      "watermelondb": "WatermelonDB",
+      "aws": "AWS",
+      "docker": "Docker",
+      "cloudflare": "Cloudflare",
+      "githubActions": "GitHub Actions",
+      "railway": "Railway",
+      "ecr": "ECR",
+      "ecs": "ECS",
+      "s3": "S3",
+      "git": "Git",
+      "figma": "Figma",
+      "postman": "Postman",
+      "jest": "Jest",
+      "testingLibrary": "Testing Library"
+    }
+  },
+  "contactCta": {
+    "eyebrow": "Trabajemos juntos",
+    "title": "Construyamos algo grande juntos",
+    "description": "Estoy abierto a nuevas oportunidades, proyectos freelance y colaboraciones. Si buscás desarrollar un producto web, mobile o una solución a medida, podemos hablar.",
+    "nandexaPrefix": "También desarrollo soluciones digitales junto a",
+    "nandexaName": "Nandexa",
+    "sendMessage": "Enviar mensaje",
+    "visitNandexa": "Visitar Nandexa",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "nandexa": "Nandexa"
+  },
+  "footer": {
+    "name": "Juan Gabriel Benitez Rinas",
+    "role": "Full-Stack & Mobile Developer",
+    "description": "Creando experiencias digitales con impacto.",
+    "nandexaPrefix": "Proyectos y soluciones digitales junto a",
+    "nandexaName": "Nandexa",
+    "copyright": "© 2026 Juan Gabriel Benitez Rinas. Todos los derechos reservados.",
+    "scrollTop": "Volver arriba",
+    "navLabel": "Enlaces del footer"
   }
 }

@@ -30,11 +30,14 @@ export const TechStack = () => {
 
           <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-6">
             {STACK_CATEGORIES.map(({ id, items }) => (
-              <div key={id} className="min-w-0">
-                <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-accent-blue">
+              <div
+                key={id}
+                className="flex min-w-0 flex-col items-center text-center"
+              >
+                <h3 className="mb-3 w-full text-xs font-semibold uppercase tracking-wide text-accent-blue">
                   {t(`categories.${id}`)}
                 </h3>
-                <div className="flex flex-col gap-3">
+                <div className="flex w-full flex-col items-center gap-3">
                   {items.map((itemKey) => (
                     <StackIconItem key={itemKey} itemKey={itemKey} />
                   ))}

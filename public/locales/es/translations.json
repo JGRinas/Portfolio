@@ -79,6 +79,7 @@
         ],
         "technologies": [
           "React Native",
+          "React",
           "Expo",
           "TypeScript",
           "CouchDB",
@@ -105,6 +106,9 @@
           "Node.js",
           "Python",
           "Flask",
+          "Electron",
+          "Swift",
+          "Kotlin",
           "MongoDB",
           "AWS",
           "Railway",
@@ -138,6 +142,7 @@
             ],
             "technologies": [
               "React Native",
+              "React",
               "Expo",
               "TypeScript",
               "Swift",

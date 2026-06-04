@@ -3,7 +3,7 @@
  * Actualizar VITE_SITE_URL en .env antes del deploy (ver .env.example).
  */
 export const SITE_URL =
-  import.meta.env.VITE_SITE_URL ?? "https://TU_DOMINIO.com";
+  import.meta.env.VITE_SITE_URL ?? "https://juangabrielrinas.com";
 
 export const SITE_NAME = "Juan Gabriel Benitez Rinas";
 

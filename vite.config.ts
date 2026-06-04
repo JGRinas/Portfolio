@@ -4,7 +4,7 @@ import { defineConfig, loadEnv, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 
-const DEFAULT_SITE_URL = "https://TU_DOMINIO.com";
+const DEFAULT_SITE_URL = "https://juangabrielrinas.com";
 
 function seoSiteUrlPlugin(siteUrl: string): Plugin {
   return {

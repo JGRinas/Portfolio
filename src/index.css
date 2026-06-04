@@ -27,6 +27,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@layer base {
+  html {
+    @apply min-h-full;
+  }
+
+  body {
+    @apply min-h-screen bg-background-light bg-hero-gradient-light bg-fixed;
+    @apply dark:bg-background-dark dark:bg-hero-gradient-dark;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }

@@ -25,6 +25,38 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59, 130, 246, 0.35) transparent;
+}
+
+.dark {
+  scrollbar-color: rgba(139, 92, 246, 0.45) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.35);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.55);
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.45);
+}
+
+.dark *::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.65);
 }
 
 @layer base {

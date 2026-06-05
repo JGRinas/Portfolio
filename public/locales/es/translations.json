@@ -221,50 +221,141 @@
   },
   "projects": {
     "title": "Proyectos destacados",
+    "featuredSubtitle": "Una selección de proyectos relevantes que construí y entregué.",
+    "moreTitle": "Más proyectos",
+    "moreSubtitle": "Trabajos adicionales, productos internos y proyectos paralelos.",
     "viewAll": "Ver todos los proyectos",
     "viewProject": "Ver proyecto",
+    "viewDetails": "Ver detalles",
+    "viewRepository": "Ver repositorio",
+    "closeModal": "Cerrar",
+    "highlightsTitle": "Highlights",
     "items": {
       "almotick": {
         "title": "Almotick",
-        "description": "Plataforma de gestión y venta de entradas para eventos, con checkout, colaboradores, escaneo de tickets, notificaciones e infraestructura cloud."
+        "description": "Plataforma de gestión y venta de entradas para eventos, con checkout, colaboradores, escaneo de tickets, notificaciones e infraestructura cloud.",
+        "longDescription": "Plataforma integral de ticketing para eventos que cubre todo el ciclo: creación de eventos, venta online, checkout, roles de colaboradores, escaneo de entradas, notificaciones y despliegue en producción con infraestructura cloud escalable.",
+        "highlights": [
+          "Checkout y venta de entradas en producción",
+          "Escaneo de tickets y roles de colaboradores",
+          "Infraestructura cloud con AWS y Cloudflare"
+        ]
       },
       "hre": {
         "title": "HRE Auction Management",
-        "description": "Aplicación web para gestión de remates de ganado, lotes, administración de subastas y usuarios."
+        "description": "Aplicación web para gestión de remates de ganado, lotes, administración de subastas y usuarios.",
+        "longDescription": "Aplicación web para la gestión operativa de remates de ganado: administración de lotes, subastas, usuarios y flujos de negocio en un entorno productivo orientado al sector agropecuario.",
+        "highlights": [
+          "Gestión de lotes y subastas",
+          "Panel de administración de usuarios",
+          "Despliegue cloud en producción"
+        ]
       },
       "passlp": {
         "title": "PassLP",
-        "description": "Ticketera web para eventos, con gestión de eventos, lotes, checkout, usuarios, roles, invitaciones, RRPP y despliegue cloud."
+        "description": "Ticketera web para eventos, con gestión de eventos, lotes, checkout, usuarios, roles, invitaciones, RRPP y despliegue cloud.",
+        "longDescription": "Ticketera web para eventos con gestión completa de eventos, lotes, checkout, usuarios, roles, invitaciones, RRPP y despliegue cloud. Diseñada para operar en producción con foco en escalabilidad y experiencia de usuario.",
+        "highlights": [
+          "Gestión de eventos, lotes y checkout",
+          "Roles, invitaciones y RRPP",
+          "Despliegue en AWS y Cloudflare"
+        ]
+      },
+      "agrocarteira": {
+        "title": "AgroCarteira",
+        "description": "Billetera virtual para el mercado brasilero, complementaria a TodoAgro, enfocada en transferencias, seguridad y experiencia mobile.",
+        "longDescription": "Desarrollé nuevas funcionalidades para AgroCarteira, una billetera virtual complementaria a TodoAgro orientada al mercado brasilero. Trabajé en módulos clave como transferencias (TED, boleto bancario, Pix y otros medios), acceso biométrico, notificaciones y mejoras generales de experiencia de usuario. También participé en la configuración y preparación de la app para publicación y aprobación en Google Play y App Store. El proyecto priorizó Clean Architecture y Screaming Architecture para mantener una base de código escalable, modular y fácil de mantener.",
+        "highlights": [
+          "Implementación de transferencias con múltiples medios",
+          "Acceso biométrico",
+          "Notificaciones push",
+          "Publicación y validación en stores"
+        ]
+      },
+      "todoagro": {
+        "title": "TodoAgro",
+        "description": "Marketplace mobile agro para Brasil, con carrito, checkout, compras, notificaciones y asistente IA integrado.",
+        "longDescription": "Trabajé en el desarrollo de múltiples funcionalidades clave de TodoAgro, una app mobile orientada al mercado agro de Brasil. Implementé desde cero módulos como carrito, checkout, listado de productos, sección de mis compras, notificaciones y un asistente de IA integrado capaz de responder dudas sobre la app y también consultas del agro en general. Además, participé en la configuración de la app para su publicación en Android e iOS, acompañando el proceso de validación en ambas tiendas. La aplicación fue desarrollada priorizando Clean Architecture y Screaming Architecture.",
+        "highlights": [
+          "Carrito y checkout desde cero",
+          "Mis compras",
+          "Asistente IA dentro de la app",
+          "Publicación en stores"
+        ]
+      },
+      "agronative": {
+        "title": "AgroNative UI Kit",
+        "description": "Librería interna de componentes compartidos para acelerar el desarrollo mobile dentro del ecosistema Agro.",
+        "longDescription": "Desarrollé una librería interna de componentes reutilizables para compartir UI y patrones entre AgroCarteira y TodoAgro. La construí con React Native y TypeScript, y también me encargué de la estrategia de versionado y de su publicación privada en npm para que pudiera ser utilizada por el equipo mobile. Esta librería ayudó a estandarizar componentes, reducir duplicación y acelerar el desarrollo.",
+        "highlights": [
+          "Librería compartida",
+          "Versionado",
+          "Publicación privada en npm",
+          "Reutilización entre apps"
+        ]
+      },
+      "macrointell": {
+        "title": "MacroIntell App",
+        "description": "Aplicación interna para gestión semanal de viandas e información empresarial para colaboradores.",
+        "longDescription": "Participé en el desarrollo de una app interna para MacroIntell pensada para que los colaboradores puedan seleccionar sus viandas de la semana siguiente, revisar las ya asignadas para la semana actual y consultar información empresarial relevante. Además de colaborar en el desarrollo, acompañé a un nuevo integrante del equipo en su capacitación, guiándolo en la implementación, resolviendo dudas y ayudándolo a avanzar en la app.",
+        "highlights": [
+          "App interna de uso real",
+          "Acompañamiento a trainee/new joiner",
+          "Coordinación y soporte técnico"
+        ]
+      },
+      "gillette": {
+        "title": "Gillette Beard Filter",
+        "description": "Aplicación desktop en tiempo real para agregar o quitar barba con visión computacional, utilizada en campaña de Gillette.",
+        "longDescription": "Desarrollé una aplicación desktop capaz de agregar o quitar barba en tiempo real utilizando visión computacional y modelos ejecutados localmente, sin conexión a internet. Fue construida con Electron, HTML, CSS, JavaScript, ml5 y FaceMesh. La solución se utilizó en una campaña de Gillette para presentar Match 3 Carbono y fue desplegada en más de 15 sucursales en Buenos Aires.",
+        "highlights": [
+          "Tiempo real",
+          "Ejecución offline",
+          "Campaña en +15 sucursales",
+          "Integración de visión computacional"
+        ]
+      },
+      "anavir": {
+        "title": "Ana-Vir",
+        "description": "Plataforma full-stack para consignataria, enfocada en visualización de transacciones y gestión operativa.",
+        "longDescription": "Desarrollé tanto el frontend como el backend de Ana-Vir, una plataforma pensada para que una consignataria pueda cargar, visualizar y administrar mejor la información vinculada a sus transacciones y al manejo de sus tierras. El proyecto fue construido con React + Vite + TypeScript en frontend, Node + Express + TypeScript en backend, y desplegado utilizando Railway y Cloudflare.",
+        "highlights": [
+          "Frontend + backend completo",
+          "Plataforma de uso operativo real",
+          "Despliegue cloud"
+        ]
+      },
+      "posmart": {
+        "title": "Posmart",
+        "description": "Asistente por WhatsApp para registrar eventos del campo y simplificar procesos operativos.",
+        "longDescription": "Trabajé junto a un equipo en Posmart y me encargué del bot de WhatsApp desarrollado con Node, Express y TypeScript. Configuré toda la cuenta de Meta, incluyendo portfolio comercial, webhook, permisos y flujos dentro de WhatsApp Business. El asistente busca simplificar la forma en que se registran eventos del campo, como compra o muerte de animales, movimientos entre potreros y otros detalles operativos. Utilicé Whisper para transcripción de audio y GPT para decidir dinámicamente a qué endpoint debía enviarse cada mensaje, complementando el flujo con formularios y automatizaciones en Meta. También participé en la configuración del paso a staging del front, back y bot usando AWS, Railway y Cloudflare.",
+        "highlights": [
+          "Bot de WhatsApp",
+          "Integración con Whisper + GPT",
+          "Configuración completa de Meta",
+          "Staging multicomponente"
+        ]
+      },
+      "gymapp": {
+        "title": "GymApp",
+        "description": "Aplicación construida como prueba técnica integral, destacando tanto en mobile como en backend, diseño y documentación.",
+        "longDescription": "GymApp fue una prueba técnica en la que busqué diferenciarme y mostrar una visión de producto más completa. No solo desarrollé la app mobile, sino también el backend, amplié el diseño en Figma, realicé diagramas de flujo, modelos de base de datos, DER y una organización detallada de tareas en Trello. Gracias a esta presentación integral logré destacarme entre más de 30 participantes y finalmente quedé seleccionado para Almoby.",
+        "highlights": [
+          "Prueba técnica integral",
+          "Mobile + backend",
+          "Diseño + documentación",
+          "Resultado laboral real"
+        ]
       },
       "visortv": {
         "title": "Visor TV - Screen Administration",
-        "description": "Sistema de administración de pantallas con roles. Crear, editar y monitorizar pantallas con contenido multimedia."
-      },
-      "anavir": {
-        "title": "AnaVir SRL"
-      },
-      "posmart": {
-        "title": "Posmart"
-      },
-      "gillette": {
-        "title": "Gillette Beard Filter"
-      },
-      "todoagro": {
-        "title": "TodoAgro Mobile"
-      },
-      "agrocarteira": {
-        "title": "AgroCarteira"
-      },
-      "derecho": {
-        "title": "Facultad de Derecho"
-      },
-      "postman": {
-        "title": "Postman Collections",
-        "subtitle": "Pruebas de API"
-      },
-      "figma": {
-        "title": "Figma UI Kits",
-        "subtitle": "Sistema de diseño"
+        "description": "Sistema de administración de pantallas con roles. Crear, editar y monitorizar pantallas con contenido multimedia.",
+        "longDescription": "Sistema de administración de pantallas con roles diferenciados para crear, editar y monitorizar pantallas con contenido multimedia. Desarrollado con React, TypeScript y desplegado en AWS.",
+        "highlights": [
+          "Gestión de pantallas con roles",
+          "Panel de administración",
+          "Despliegue en AWS"
+        ]
       }
     }
   },

@@ -1,22 +1,24 @@
-export interface FeaturedProject {
+export type ProjectType = "featured" | "secondary";
+
+export interface Project {
   id: string;
-  image: string;
+  type: ProjectType;
+  images: string[];
   technologies: string[];
   page?: string;
   repository?: string;
 }
 
-export interface SecondaryProject {
-  id: string;
-  image?: string;
-  technologies?: string[];
-  page?: string;
-  repository?: string;
-  icon?: "postman" | "figma";
-}
-
 export interface ProjectCopy {
   title: string;
-  description?: string;
+  description: string;
+  longDescription: string;
+  highlights?: string[];
   subtitle?: string;
 }
+
+/** @deprecated Use Project */
+export type FeaturedProject = Project;
+
+/** @deprecated Use Project */
+export type SecondaryProject = Project;

@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { FaMobileAlt } from "react-icons/fa";
-import PhotoDark from "~/assets/images/photo-me-dark.png";
-import PhotoLight from "~/assets/images/photo-me-white.png";
+import PhotoDark from "~/assets/images/photo-me-dark.webp";
+import PhotoLight from "~/assets/images/photo-me-white.webp";
 
 const STARS = [
   { top: "8%", left: "18%", size: "2px", delay: "0s" },

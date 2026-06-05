@@ -211,50 +211,141 @@
   },
   "projects": {
     "title": "Featured Projects",
+    "featuredSubtitle": "A selection of impactful projects I've built and shipped.",
+    "moreTitle": "More Projects",
+    "moreSubtitle": "Additional work and side projects.",
     "viewAll": "View all projects",
     "viewProject": "View project",
+    "viewDetails": "View details",
+    "viewRepository": "View repository",
+    "closeModal": "Close",
+    "highlightsTitle": "Highlights",
     "items": {
       "almotick": {
         "title": "Almotick",
-        "description": "Event ticketing and management platform with checkout, collaborators, ticket scanning, notifications and cloud infrastructure."
+        "description": "Event ticketing and management platform with checkout, collaborators, ticket scanning, notifications and cloud infrastructure.",
+        "longDescription": "End-to-end event ticketing platform covering event creation, online sales, checkout, collaborator roles, ticket scanning, notifications and scalable cloud infrastructure in production.",
+        "highlights": [
+          "Checkout and ticket sales in production",
+          "Ticket scanning and collaborator roles",
+          "Cloud infrastructure with AWS and Cloudflare"
+        ]
       },
       "hre": {
         "title": "HRE Auction Management",
-        "description": "Web application for managing cattle auctions, lots, administration, auctions and users."
+        "description": "Web application for managing cattle auctions, lots, administration, auctions and users.",
+        "longDescription": "Web application for operational management of cattle auctions: lots, bidding flows, user administration and business workflows in a production environment for the agro sector.",
+        "highlights": [
+          "Lots and auction management",
+          "User administration panel",
+          "Cloud deployment in production"
+        ]
       },
       "passlp": {
         "title": "PassLP",
-        "description": "Web ticketing platform for events, with event management, lots, checkout, users, roles, invitations, promoters and cloud deployment."
+        "description": "Web ticketing platform for events, with event management, lots, checkout, users, roles, invitations, promoters and cloud deployment.",
+        "longDescription": "Web ticketing platform for events with full event management, lots, checkout, users, roles, invitations, promoters and cloud deployment. Built for production with a focus on scalability and user experience.",
+        "highlights": [
+          "Event, lots and checkout management",
+          "Roles, invitations and promoters",
+          "Deployment on AWS and Cloudflare"
+        ]
+      },
+      "agrocarteira": {
+        "title": "AgroCarteira",
+        "description": "Digital wallet for the Brazilian market, built as a companion app for TodoAgro, focused on transfers, security and mobile UX.",
+        "longDescription": "I developed new features for AgroCarteira, a digital wallet designed for the Brazilian market and built as a companion app for TodoAgro. I worked on key modules such as transfers (TED, boleto bancário, Pix and other methods), biometric access, notifications and overall UX improvements. I also helped configure the app for Android and iOS publishing, ensuring it passed both store review processes. The project was built with Clean Architecture and Screaming Architecture to ensure scalability and maintainability.",
+        "highlights": [
+          "Multi-method transfer implementation",
+          "Biometric access",
+          "Push notifications",
+          "Store publishing and validation"
+        ]
+      },
+      "todoagro": {
+        "title": "TodoAgro",
+        "description": "Agro marketplace app for Brazil featuring cart, checkout, purchases, notifications and an integrated AI assistant.",
+        "longDescription": "I developed several core features for TodoAgro, a mobile app focused on the Brazilian agro market. I built modules such as cart, checkout, product listing, purchase history, notifications and an integrated AI assistant that could answer questions about the app and about agriculture in general. I also helped configure the app for Android and iOS publishing, ensuring it passed both store review processes. The project followed Clean Architecture and Screaming Architecture principles.",
+        "highlights": [
+          "Cart and checkout built from scratch",
+          "Purchase history",
+          "In-app AI assistant",
+          "Store publishing"
+        ]
+      },
+      "agronative": {
+        "title": "AgroNative UI Kit",
+        "description": "Internal shared component library built to speed up mobile development across the Agro ecosystem.",
+        "longDescription": "I built an internal reusable component library to share UI and patterns across AgroCarteira and TodoAgro. It was developed with React Native and TypeScript, and I also handled versioning and private npm publishing so the mobile team could use it efficiently. This library helped standardize components, reduce duplication and speed up development.",
+        "highlights": [
+          "Shared component library",
+          "Versioning strategy",
+          "Private npm publishing",
+          "Cross-app reuse"
+        ]
+      },
+      "macrointell": {
+        "title": "MacroIntell App",
+        "description": "Internal app for weekly meal selection and company information for employees.",
+        "longDescription": "I worked on an internal app for MacroIntell that allows employees to select their meals for the following week, review their current selections and check company-related information. Besides contributing to development, I also mentored a newly joined teammate, guiding implementation decisions, answering questions and supporting the training process.",
+        "highlights": [
+          "Real internal production app",
+          "Trainee / new joiner mentoring",
+          "Technical coordination and support"
+        ]
+      },
+      "gillette": {
+        "title": "Gillette Beard Filter",
+        "description": "Real-time desktop application to add or remove beard using computer vision, used in a Gillette campaign.",
+        "longDescription": "I built a desktop application capable of adding or removing beard in real time using computer vision and locally executed models, fully offline. It was developed with Electron, HTML, CSS, JavaScript, ml5 and FaceMesh. The solution was used in a Gillette campaign for Match 3 Carbono and deployed across more than 15 stores in Buenos Aires.",
+        "highlights": [
+          "Real-time processing",
+          "Offline execution",
+          "Campaign across 15+ stores",
+          "Computer vision integration"
+        ]
+      },
+      "anavir": {
+        "title": "Ana-Vir",
+        "description": "Full-stack platform for a livestock/consignment business, focused on transaction visibility and operational management.",
+        "longDescription": "I built both the frontend and backend of Ana-Vir, a platform designed to help a consignment business manage and visualize information related to its transactions and land operations. The frontend was developed with React, Vite and TypeScript, while the backend used Node, Express and TypeScript. The project was deployed using Railway and Cloudflare.",
+        "highlights": [
+          "Full frontend + backend",
+          "Real operational platform",
+          "Cloud deployment"
+        ]
+      },
+      "posmart": {
+        "title": "Posmart",
+        "description": "WhatsApp assistant built to simplify farm event logging and operational workflows.",
+        "longDescription": "I worked with a team on Posmart and was responsible for the WhatsApp bot built with Node, Express and TypeScript. I configured the full Meta setup, including business portfolio, webhook, permissions and WhatsApp Business flows. The assistant helps simplify how farm events are recorded, such as animal purchases, deaths, paddock changes and other operational details. I used Whisper for audio transcription and GPT to decide dynamically which endpoint each message should call, complementing the experience with Meta forms and automation flows. I also helped configure staging environments for frontend, backend and bot using AWS, Railway and Cloudflare.",
+        "highlights": [
+          "WhatsApp bot",
+          "Whisper + GPT integration",
+          "Full Meta configuration",
+          "Multi-component staging"
+        ]
+      },
+      "gymapp": {
+        "title": "GymApp",
+        "description": "Technical challenge app where I stood out by delivering not only the mobile app, but also backend, design and documentation.",
+        "longDescription": "GymApp was a technical challenge where I aimed to stand out by presenting a more complete product mindset. I built not only the mobile application, but also the backend, expanded the design in Figma, created flow diagrams, database models, ER diagrams and organized the work in Trello with detailed task breakdowns. This end-to-end presentation helped me stand out among more than 30 candidates and ultimately led me to joining Almoby.",
+        "highlights": [
+          "End-to-end technical challenge",
+          "Mobile + backend",
+          "Design + documentation",
+          "Real career outcome"
+        ]
       },
       "visortv": {
         "title": "Visor TV - Screen Administration",
-        "description": "Screen management system with roles. Create, edit and monitor screens with media content."
-      },
-      "anavir": {
-        "title": "AnaVir SRL"
-      },
-      "posmart": {
-        "title": "Posmart"
-      },
-      "gillette": {
-        "title": "Gillette Beard Filter"
-      },
-      "todoagro": {
-        "title": "TodoAgro Mobile"
-      },
-      "agrocarteira": {
-        "title": "AgroCarteira"
-      },
-      "derecho": {
-        "title": "Facultad de Derecho"
-      },
-      "postman": {
-        "title": "Postman Collections",
-        "subtitle": "API Testing"
-      },
-      "figma": {
-        "title": "Figma UI Kits",
-        "subtitle": "Design System"
+        "description": "Screen management system with roles. Create, edit and monitor screens with media content.",
+        "longDescription": "Screen management system with role-based access to create, edit and monitor screens with multimedia content. Built with React, TypeScript and deployed on AWS.",
+        "highlights": [
+          "Role-based screen management",
+          "Administration panel",
+          "AWS deployment"
+        ]
       }
     }
   },

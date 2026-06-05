@@ -1,57 +1,102 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FaStar } from "react-icons/fa";
+import { FaCube, FaLayerGroup } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import {
   featuredProjects,
+  getProjectById,
   secondaryProjects,
 } from "~/modules/infrastructure/projects";
 import { handleScrollToSection } from "~/modules/infrastructure/utils/handleScroll";
 import { FadeIn } from "../animations/fade-in";
 import { FeaturedProjectCard } from "./FeaturedProjectCard";
+import { ProjectDetailModal } from "./ProjectDetailModal";
 import { SecondaryProjectCard } from "./SecondaryProjectCard";
 
 export const Projects = () => {
   const { t } = useTranslation("common", { keyPrefix: "projects" });
+  const [selectedProjectId, setSelectedProjectId] = useState<string | null>(
+    null,
+  );
+
+  const selectedProject = selectedProjectId
+    ? getProjectById(selectedProjectId) ?? null
+    : null;
 
   return (
     <section id="projects" className="py-12 md:py-16">
       <FadeIn className="w-full">
-        <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-accent text-white shadow-glowBlue">
-              <FaStar size={16} aria-hidden="true" />
+        <header className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div className="flex items-start gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-accent text-white shadow-glowBlue">
+              <FaCube size={16} aria-hidden="true" />
             </div>
-            <h2 className="text-xl font-bold text-text-lightPrimary dark:text-text-darkPrimary md:text-2xl">
-              {t("title")}
-            </h2>
+            <div>
+              <h2 className="text-xl font-bold text-text-lightPrimary dark:text-text-darkPrimary md:text-2xl">
+                {t("title")}
+              </h2>
+              <p className="mt-1 max-w-xl text-sm text-text-lightSecondary dark:text-text-darkSecondary">
+                {t("featuredSubtitle")}
+              </p>
+            </div>
           </div>
 
           <button
             type="button"
             onClick={() => handleScrollToSection("projects-secondary")}
-            className="inline-flex items-center gap-1 text-sm font-semibold text-accent-violet transition-opacity hover:opacity-80 dark:text-accent-blue"
+            className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-accent-blue transition-opacity hover:opacity-80 dark:text-accent-violet"
           >
             {t("viewAll")}
             <HiArrowRight size={14} aria-hidden="true" />
           </button>
-        </div>
+        </header>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {featuredProjects.map((project) => (
-            <FeaturedProjectCard key={project.id} project={project} />
+          {featuredProjects.map((project, index) => (
+            <FeaturedProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              onSelect={() => setSelectedProjectId(project.id)}
+            />
           ))}
         </div>
       </FadeIn>
 
-      <div id="projects-secondary" className="mt-8 scroll-mt-24 md:mt-10">
+      <div id="projects-secondary" className="mt-16 scroll-mt-24 md:mt-20">
         <FadeIn delay={100} className="w-full">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
+          <header className="mb-8">
+            <div className="flex items-start gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-blue/10 text-accent-blue shadow-glowBlue dark:bg-accent-blue/10">
+                <FaLayerGroup size={16} aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-text-lightPrimary dark:text-text-darkPrimary md:text-2xl">
+                  {t("moreTitle")}
+                </h2>
+                <p className="mt-1 max-w-xl text-sm text-text-lightSecondary dark:text-text-darkSecondary">
+                  {t("moreSubtitle")}
+                </p>
+              </div>
+            </div>
+          </header>
+
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
             {secondaryProjects.map((project) => (
-              <SecondaryProjectCard key={project.id} project={project} />
+              <SecondaryProjectCard
+                key={project.id}
+                project={project}
+                onSelect={() => setSelectedProjectId(project.id)}
+              />
             ))}
           </div>
         </FadeIn>
       </div>
+
+      <ProjectDetailModal
+        project={selectedProject}
+        onClose={() => setSelectedProjectId(null)}
+      />
     </section>
   );
 };

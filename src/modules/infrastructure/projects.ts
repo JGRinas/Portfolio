@@ -1,43 +1,179 @@
-import AlmotickImage from "~/assets/images/projects/almotick.png";
-import PassLpImage from "~/assets/images/projects/passlp.png";
-import { FeaturedProject, SecondaryProject } from "~/modules/domain/projects";
+import { Project } from "~/modules/domain/projects";
 
-export const featuredProjects: FeaturedProject[] = [
+import Almotick1 from "~/assets/images/projects/almotick/1.webp";
+import PassLp1 from "~/assets/images/projects/passlp/1.webp";
+
+import AgroCarteira1 from "~/assets/images/projects/agrocarteira/1.webp";
+import AgroCarteira2 from "~/assets/images/projects/agrocarteira/2.webp";
+import TodoAgro1 from "~/assets/images/projects/todoagro/1.webp";
+import AgroNative1 from "~/assets/images/projects/agronative/1.webp";
+import MacroIntell1 from "~/assets/images/projects/macrointell-app/1.webp";
+import MacroIntell2 from "~/assets/images/projects/macrointell-app/2.webp";
+import Gillette1 from "~/assets/images/projects/gillette/1.webp";
+import Gillette2 from "~/assets/images/projects/gillette/2.webp";
+import Gillette3 from "~/assets/images/projects/gillette/3.webp";
+import AnaVir1 from "~/assets/images/projects/ana-vir/1.webp";
+import AnaVir2 from "~/assets/images/projects/ana-vir/2.webp";
+import Posmart1 from "~/assets/images/projects/posmart/1.webp";
+import Posmart2 from "~/assets/images/projects/posmart/2.webp";
+import GymApp1 from "~/assets/images/projects/gymapp/1.webp";
+import GymApp2 from "~/assets/images/projects/gymapp/2.webp";
+import GymApp3 from "~/assets/images/projects/gymapp/3.webp";
+import GymApp4 from "~/assets/images/projects/gymapp/4.webp";
+
+const HRE_IMAGE =
+  "https://res.cloudinary.com/dca4jaeix/image/upload/fl_preserve_transparency/v1742305421/b76f2dbc-b2e9-4f99-8ae8-4d39cc1b667f.jpg?_s=public-apps";
+
+const VISOR_TV_IMAGE =
+  "https://res.cloudinary.com/dca4jaeix/image/upload/fl_preserve_transparency/v1742305555/0a00c867-ef3b-4a6d-8019-9e5fd1cea371.jpg?_s=public-apps";
+
+export const projects: Project[] = [
   {
     id: "almotick",
-    image: AlmotickImage,
+    type: "featured",
+    images: [Almotick1],
     technologies: ["React", "Python", "AWS", "Cloudflare", "MongoDB"],
     page: "https://almotick.com",
   },
   {
     id: "hre",
-    image:
-      "https://res.cloudinary.com/dca4jaeix/image/upload/fl_preserve_transparency/v1742305421/b76f2dbc-b2e9-4f99-8ae8-4d39cc1b667f.jpg?_s=public-apps",
+    type: "featured",
+    images: [HRE_IMAGE],
     technologies: ["React", "Python", "AWS", "Cloudflare", "PostgreSQL"],
     page: "https://hre.com.ar",
   },
   {
     id: "passlp",
-    image: PassLpImage,
+    type: "featured",
+    images: [PassLp1],
     technologies: ["React", "Nest", "AWS", "Cloudflare", "MongoDB"],
     page: "https://passlp.com/",
   },
-];
-
-export const secondaryProjects: SecondaryProject[] = [
   {
-    id: "visortv",
-    technologies: ["React", "TypeScript", "Vercel"],
-    repository: "https://github.com/JGRinas/VisorTV-Front",
+    id: "agrocarteira",
+    type: "secondary",
+    images: [AgroCarteira1, AgroCarteira2],
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Firebase",
+      "App Store",
+      "Play Store",
+      "Clean Architecture",
+      "Screaming Architecture",
+    ],
   },
-  { id: "anavir", technologies: ["Figma", "React", "Node.js", "Cloudflare"] },
-  { id: "posmart", technologies: ["React", "Node.js", "Railway", "AWS"] },
-  { id: "gillette", technologies: ["Electron"] },
   {
     id: "todoagro",
-    technologies: ["React Native", "TypeScript", "Expo", "Firebase"],
+    type: "secondary",
+    images: [TodoAgro1],
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Firebase",
+      "App Store",
+      "Play Store",
+      "Clean Architecture",
+      "Screaming Architecture",
+    ],
   },
-  { id: "agrocarteira", technologies: ["React Native", "Expo", "TypeScript"] },
-  { id: "derecho", technologies: ["React", "Next.js"] },
-  { id: "figma", icon: "figma" },
+  {
+    id: "agronative",
+    type: "secondary",
+    images: [AgroNative1],
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "npm private packages",
+      "Design System",
+    ],
+  },
+  {
+    id: "macrointell",
+    type: "secondary",
+    images: [MacroIntell1, MacroIntell2],
+    technologies: ["React Native", "TypeScript", "Mobile Development", "Mentoring"],
+  },
+  {
+    id: "gillette",
+    type: "secondary",
+    images: [Gillette1, Gillette2, Gillette3],
+    technologies: [
+      "Electron",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ml5",
+      "FaceMesh",
+      "Offline ML",
+    ],
+  },
+  {
+    id: "anavir",
+    type: "secondary",
+    images: [AnaVir1, AnaVir2],
+    technologies: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Railway",
+      "Cloudflare",
+    ],
+  },
+  {
+    id: "posmart",
+    type: "secondary",
+    images: [Posmart1, Posmart2],
+    technologies: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "WhatsApp API",
+      "Meta Business",
+      "Whisper",
+      "GPT",
+      "AWS",
+      "Railway",
+      "Cloudflare",
+    ],
+  },
+  {
+    id: "gymapp",
+    type: "secondary",
+    images: [GymApp1, GymApp2, GymApp3, GymApp4],
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Figma",
+      "Trello",
+      "Database Design",
+    ],
+    repository: "https://github.com/JGRinas/GymApp",
+  },
+  {
+    id: "visortv",
+    type: "secondary",
+    images: [VISOR_TV_IMAGE],
+    technologies: ["React", "TypeScript", "AWS"],
+    repository: "https://github.com/JGRinas/VisorTV-Front",
+  },
 ];
+
+export const featuredProjects = projects.filter((p) => p.type === "featured");
+
+export const secondaryProjects = projects.filter(
+  (p) => p.type === "secondary",
+);
+
+export const getProjectById = (id: string): Project | undefined =>
+  projects.find((p) => p.id === id);
+
+export const getProjectCover = (project: Project): string | undefined =>
+  project.images[0];

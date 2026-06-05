@@ -1,91 +1,67 @@
 import { useTranslation } from "react-i18next";
-import { FigmaIcon, PostmanIcon } from "~/assets/icons";
-import { SecondaryProject } from "~/modules/domain/projects";
+import { Project } from "~/modules/domain/projects";
+import { getProjectCover } from "~/modules/infrastructure/projects";
 import { ProjectTag } from "./ProjectTag";
 
-const ICON_MAP = {
-  postman: PostmanIcon,
-  figma: FigmaIcon,
-} as const;
-
 interface SecondaryProjectCardProps {
-  project: SecondaryProject;
+  project: Project;
+  onSelect: () => void;
 }
 
 export const SecondaryProjectCard = ({
   project,
+  onSelect,
 }: SecondaryProjectCardProps) => {
   const { t } = useTranslation("common", { keyPrefix: "projects" });
   const copy = t(`items.${project.id}`, { returnObjects: true }) as {
     title: string;
-    subtitle?: string;
+    description?: string;
   };
 
-  const Icon = project.icon ? ICON_MAP[project.icon] : null;
-  const href = project.page ?? project.repository;
+  const cover = getProjectCover(project);
+  const visibleTags = project.technologies.slice(0, 3);
 
-  const content = (
-    <>
-      {project.image && (
-        <>
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      aria-label={copy.title}
+      className="group flex w-full cursor-pointer gap-3 overflow-hidden rounded-xl border border-border-light bg-background-lightElevated p-3 text-left shadow-cardLight transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-accent-blue/40 hover:shadow-glowBlue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-blue motion-reduce:transition-none motion-reduce:hover:translate-y-0 dark:border-border-dark dark:bg-background-darkElevated/80 dark:shadow-cardDark dark:hover:border-accent-blue/40 dark:hover:shadow-glowBlue sm:gap-3.5 sm:p-3.5"
+    >
+      <div className="relative h-[88px] w-[88px] shrink-0 overflow-hidden rounded-lg border border-border-light dark:border-border-dark">
+        {cover ? (
           <img
-            src={project.image}
+            src={cover}
             alt=""
             aria-hidden="true"
             loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
+            className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105 motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
-        </>
-      )}
+        ) : (
+          <div
+            className="flex h-full w-full items-center justify-center bg-accent-blue/5 dark:bg-accent-blue/10"
+            aria-hidden="true"
+          />
+        )}
+      </div>
 
-      {!project.image && (
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 via-background-darkElevated to-accent-violet/10 dark:from-accent-blue/15 dark:to-accent-violet/15"
-          aria-hidden="true"
-        />
-      )}
-
-      <div className="relative flex h-full min-h-[110px] flex-col justify-between p-3 sm:min-h-[120px] sm:p-4">
-        <h3 className="text-sm font-bold leading-tight text-text-lightPrimary dark:text-text-darkPrimary">
+      <div className="flex min-w-0 flex-1 flex-col justify-center gap-1.5">
+        <h3 className="text-sm font-bold leading-tight text-text-lightPrimary dark:text-text-darkPrimary sm:text-base">
           {copy.title}
         </h3>
 
-        <div className="mt-2 flex items-end justify-between gap-2">
-          {Icon && copy.subtitle ? (
-            <div className="flex items-center gap-2">
-              <Icon width={22} height={22} className="shrink-0" />
-              <span className="text-xs text-text-lightSecondary dark:text-text-darkSecondary">
-                {copy.subtitle}
-              </span>
-            </div>
-          ) : (
-            <div className="flex flex-wrap gap-1">
-              {project.technologies?.map((tech) => (
-                <ProjectTag key={tech} label={tech} />
-              ))}
-            </div>
-          )}
+        {copy.description && (
+          <p className="line-clamp-2 text-xs leading-snug text-text-lightSecondary dark:text-text-darkSecondary sm:text-sm">
+            {copy.description}
+          </p>
+        )}
+
+        <div className="flex flex-wrap gap-1">
+          {visibleTags.map((tech) => (
+            <ProjectTag key={tech} label={tech} />
+          ))}
         </div>
       </div>
-    </>
+    </button>
   );
-
-  const className =
-    "group relative overflow-hidden rounded-xl border border-border-light bg-background-lightElevated shadow-cardLight transition-all duration-300 ease-out hover:-translate-y-1 hover:border-accent-blue/50 hover:shadow-glowBlue motion-reduce:transition-none motion-reduce:hover:translate-y-0 dark:border-border-dark dark:bg-background-darkElevated/80 dark:shadow-cardDark dark:hover:border-accent-blue/50 dark:hover:shadow-glowBlue";
-
-  if (href) {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={className}
-      >
-        {content}
-      </a>
-    );
-  }
-
-  return <article className={className}>{content}</article>;
 };

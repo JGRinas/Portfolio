@@ -1,10 +1,11 @@
-export type ProjectType = "featured" | "secondary";
+export type ProjectType = "featured" | "secondary" | "early";
 
 export interface Project {
   id: string;
   type: ProjectType;
   images: string[];
   technologies: string[];
+  year?: string;
   page?: string;
   repository?: string;
 }

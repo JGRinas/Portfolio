@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FaCube, FaLayerGroup } from "react-icons/fa";
+import { FaCube, FaHistory, FaLayerGroup } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import {
+  earlyProjects,
   featuredProjects,
   getProjectById,
   secondaryProjects,
 } from "~/modules/infrastructure/projects";
 import { handleScrollToSection } from "~/modules/infrastructure/utils/handleScroll";
 import { FadeIn } from "../animations/fade-in";
+import { EarlyProjectCard } from "./EarlyProjectCard";
 import { FeaturedProjectCard } from "./FeaturedProjectCard";
 import { ProjectDetailModal } from "./ProjectDetailModal";
 import { SecondaryProjectCard } from "./SecondaryProjectCard";
@@ -84,6 +86,36 @@ export const Projects = () => {
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
             {secondaryProjects.map((project) => (
               <SecondaryProjectCard
+                key={project.id}
+                project={project}
+                onSelect={() => setSelectedProjectId(project.id)}
+              />
+            ))}
+          </div>
+        </FadeIn>
+      </div>
+
+      <div id="projects-early" className="mt-16 scroll-mt-24 md:mt-20">
+        <FadeIn delay={150} className="w-full">
+          <header className="mb-6">
+            <div className="flex items-start gap-3">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-accent-violet/10 text-accent-violet dark:bg-accent-violet/15">
+                <FaHistory size={14} aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="text-lg font-bold text-text-lightPrimary dark:text-text-darkPrimary md:text-xl">
+                  {t("earlyTitle")}
+                </h2>
+                <p className="mt-1 max-w-2xl text-sm text-text-lightSecondary dark:text-text-darkSecondary">
+                  {t("earlySubtitle")}
+                </p>
+              </div>
+            </div>
+          </header>
+
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+            {earlyProjects.map((project) => (
+              <EarlyProjectCard
                 key={project.id}
                 project={project}
                 onSelect={() => setSelectedProjectId(project.id)}

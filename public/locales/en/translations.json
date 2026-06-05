@@ -214,6 +214,9 @@
     "featuredSubtitle": "A selection of impactful projects I've built and shipped.",
     "moreTitle": "More Projects",
     "moreSubtitle": "Additional work and side projects.",
+    "earlyTitle": "Early Projects",
+    "earlySubtitle": "Projects developed during my learning stage, before the rise of generative AI tools. I keep them as part of my technical evolution.",
+    "earlyBadge": "Pre-AI",
     "viewAll": "View all projects",
     "viewProject": "View project",
     "viewDetails": "View details",
@@ -346,6 +349,21 @@
           "Administration panel",
           "AWS deployment"
         ]
+      },
+      "spaceship": {
+        "title": "SpaceShip",
+        "description": "Game built in C++ to practice Object-Oriented Programming, featuring difficulty selection, lives, collisions and scoring.",
+        "longDescription": "SpaceShip was a game developed in C++ during my learning stage to practice Object-Oriented Programming concepts. At the beginning, the player can choose the difficulty level. The spaceship has 3 lives, and each life allows up to 3 collisions before exploding. When all lives are lost, the game ends and displays the final score."
+      },
+      "blulight": {
+        "title": "BluLight",
+        "description": "Management software built with C# WinForms, Entity Framework and SQL Server for a genetics and ornamentals company.",
+        "longDescription": "BluLight was a general management software project built with C# WinForms, Entity Framework and SQL Server for a genetics and ornamentals company. The system includes 5 user roles: Administrator, Laboratory Manager, Salesperson, Receptionist and Director. Each role has specific permissions and features, helping organize different internal business operations."
+      },
+      "filetable": {
+        "title": "FileTable Gallery",
+        "description": "Multimedia gallery built with C# WinForms and SQL Server, using FileTable to manage images, videos and audio files.",
+        "longDescription": "FileTable Gallery was a file gallery built with C# WinForms and SQL Server. It used SQL Server FileTable to manage multimedia files. A database view was also created to convert the HierarchyID type into varchar, since HierarchyID caused query issues inside the application. The system allows users to view all files inside the FileTable directory and filter them by images, videos and audio files."
       }
     }
   },

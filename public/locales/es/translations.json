@@ -224,6 +224,9 @@
     "featuredSubtitle": "Una selección de proyectos relevantes que construí y entregué.",
     "moreTitle": "Más proyectos",
     "moreSubtitle": "Trabajos adicionales, productos internos y proyectos paralelos.",
+    "earlyTitle": "Primeros proyectos",
+    "earlySubtitle": "Proyectos desarrollados durante mi etapa de formación, antes del auge de herramientas de IA generativa. Los mantengo como parte de mi evolución técnica.",
+    "earlyBadge": "Pre-IA",
     "viewAll": "Ver todos los proyectos",
     "viewProject": "Ver proyecto",
     "viewDetails": "Ver detalles",
@@ -356,6 +359,21 @@
           "Panel de administración",
           "Despliegue en AWS"
         ]
+      },
+      "spaceship": {
+        "title": "SpaceShip",
+        "description": "Juego desarrollado en C++ para practicar Programación Orientada a Objetos, dificultad configurable, sistema de vidas, colisiones y puntaje.",
+        "longDescription": "SpaceShip fue un juego desarrollado en C++ durante mi etapa de formación, con el objetivo de practicar conceptos de Programación Orientada a Objetos. Al iniciar, el usuario puede elegir la dificultad. La nave cuenta con 3 vidas, y cada vida permite hasta 3 colisiones antes de explotar. Al perder las 3 vidas, el juego finaliza mostrando la cantidad de puntos obtenidos durante la partida."
+      },
+      "blulight": {
+        "title": "BluLight",
+        "description": "Software de gestión desarrollado con C# WinForms, Entity Framework y SQL Server para una empresa de genética y ornamentales.",
+        "longDescription": "BluLight fue un software de gestión general desarrollado con C# WinForms, Entity Framework y SQL Server para una empresa de genética y ornamentales. El sistema cuenta con 5 tipos de usuarios: Administrador, Jefe de laboratorio, Vendedor, Recepcionista y Director. Cada rol tiene funciones y permisos específicos, permitiendo organizar diferentes operaciones internas de la empresa."
+      },
+      "filetable": {
+        "title": "FileTable Gallery",
+        "description": "Galería multimedia con C# WinForms y SQL Server, usando FileTable para administrar imágenes, videos y audios.",
+        "longDescription": "FileTable Gallery fue una galería de archivos desarrollada con C# WinForms y SQL Server. Para el manejo de archivos multimedia se utilizó FileTable, una tabla especializada de SQL Server. También se creó una vista en la base de datos para convertir el tipo HierarchyID a varchar, ya que HierarchyID generaba errores en las consultas desde la aplicación. El sistema permite visualizar todos los archivos dentro del directorio FileTable y filtrarlos por imágenes, videos y audios."
       }
     }
   },

@@ -21,6 +21,16 @@ import GymApp2 from "~/assets/images/projects/gymapp/2.webp";
 import GymApp3 from "~/assets/images/projects/gymapp/3.webp";
 import GymApp4 from "~/assets/images/projects/gymapp/4.webp";
 
+import SpaceShip1 from "~/assets/images/projects/spaceship/image1.webp";
+import SpaceShip2 from "~/assets/images/projects/spaceship/image2.webp";
+import SpaceShip3 from "~/assets/images/projects/spaceship/image3.webp";
+import BluLight1 from "~/assets/images/projects/blulight/1.webp";
+import BluLight2 from "~/assets/images/projects/blulight/2.webp";
+import BluLight3 from "~/assets/images/projects/blulight/3.webp";
+import FileTable2 from "~/assets/images/projects/filetable/image2.webp";
+import FileTable3 from "~/assets/images/projects/filetable/image3.webp";
+import FileTable4 from "~/assets/images/projects/filetable/image4.webp";
+
 const HRE_IMAGE =
   "https://res.cloudinary.com/dca4jaeix/image/upload/fl_preserve_transparency/v1742305421/b76f2dbc-b2e9-4f99-8ae8-4d39cc1b667f.jpg?_s=public-apps";
 
@@ -164,6 +174,43 @@ export const projects: Project[] = [
     technologies: ["React", "TypeScript", "AWS"],
     repository: "https://github.com/JGRinas/VisorTV-Front",
   },
+  {
+    id: "spaceship",
+    type: "early",
+    year: "2020",
+    images: [SpaceShip1, SpaceShip2, SpaceShip3],
+    technologies: ["C++", "OOP", "Game Development"],
+    repository: "https://github.com/JGRinas/SpaceShip/blob/main/SpaceShip.cpp",
+  },
+  {
+    id: "blulight",
+    type: "early",
+    year: "2021",
+    images: [BluLight1, BluLight2, BluLight3],
+    technologies: [
+      "C#",
+      "WinForms",
+      "Entity Framework",
+      "SQL Server",
+      "Relational Database",
+    ],
+    repository:
+      "https://github.com/JGRinas/BluLight-ProyectoTaller2/tree/main/CapaPresentacion",
+  },
+  {
+    id: "filetable",
+    type: "early",
+    year: "2021",
+    images: [FileTable2, FileTable3, FileTable4],
+    technologies: [
+      "C#",
+      "WinForms",
+      "SQL Server",
+      "FileTable",
+      "HierarchyID",
+    ],
+    repository: "https://github.com/JGRinas/Galeria-con-FileTable-SQL-Server",
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.type === "featured");
@@ -171,6 +218,8 @@ export const featuredProjects = projects.filter((p) => p.type === "featured");
 export const secondaryProjects = projects.filter(
   (p) => p.type === "secondary",
 );
+
+export const earlyProjects = projects.filter((p) => p.type === "early");
 
 export const getProjectById = (id: string): Project | undefined =>
   projects.find((p) => p.id === id);

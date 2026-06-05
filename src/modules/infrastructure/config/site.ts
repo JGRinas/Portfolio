@@ -11,27 +11,42 @@ export const SITE_TITLE =
   "Juan Gabriel Benitez Rinas | Full-Stack & Mobile Developer";
 
 export const SITE_DESCRIPTION =
-  "Portfolio de Juan Gabriel Benitez Rinas, desarrollador Full-Stack y Mobile especializado en React, React Native, TypeScript, Node.js, NestJS y AWS.";
+  "Portfolio oficial de Juan Gabriel Benitez Rinas, también conocido como Juan Gabriel Rinas o JGRinas. Desarrollador Full-Stack y Mobile especializado en React, React Native, TypeScript, Node.js, NestJS y AWS.";
 
-export const SITE_KEYWORDS =
-  "Juan Gabriel Rinas, Juan Gabriel Benitez Rinas, Full-Stack Developer, Mobile Developer, React, React Native, TypeScript, Node.js, NestJS, AWS, Portfolio";
+export const SITE_OG_DESCRIPTION =
+  "Portfolio oficial de Juan Gabriel Rinas, desarrollador Full-Stack & Mobile especializado en React, React Native, TypeScript, Node.js, NestJS y AWS.";
 
 export const THEME_COLOR_DARK = "#030712";
 
 export const OG_IMAGE_PATH = "/og-image.svg";
 
+export const PERSON_ALTERNATE_NAMES = [
+  "Juan Gabriel Rinas",
+  "Juan Rinas",
+  "JG Rinas",
+  "JGRinas",
+  "juangabrielrinas",
+  "Benitez Rinas",
+] as const;
+
 export const PERSON_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Juan Gabriel Benitez Rinas",
-  alternateName: "Juan Gabriel Rinas",
+  alternateName: [...PERSON_ALTERNATE_NAMES],
+  url: "https://juangabrielrinas.com",
   jobTitle: "Full-Stack & Mobile Developer",
   email: "juangabrielrinas@gmail.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Corrientes",
-    addressCountry: "AR",
+    addressCountry: "Argentina",
   },
+  sameAs: [
+    "https://github.com/JGRinas",
+    "https://www.linkedin.com/in/juangabrielrinas",
+    "https://nandexa.com",
+  ],
   knowsAbout: [
     "React",
     "React Native",
@@ -42,9 +57,12 @@ export const PERSON_JSON_LD = {
     "Mobile Development",
     "Full-Stack Development",
   ],
-  sameAs: [
-    "https://www.linkedin.com/in/juangabrielrinas/",
-    "https://github.com/JGRinas",
-    "https://nandexa.com/",
-  ],
+} as const;
+
+export const WEBSITE_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Juan Gabriel Benitez Rinas",
+  alternateName: ["Juan Gabriel Rinas", "JGRinas", "juangabrielrinas"],
+  url: "https://juangabrielrinas.com",
 } as const;

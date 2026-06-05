@@ -18,6 +18,7 @@
   "presentation": {
     "badge": "FULL-STACK & MOBILE DEVELOPER",
     "desc": "Construyo aplicaciones web y mobile performantes que resuelven problemas reales. Especializado en React, React Native, TypeScript, Node.js y despliegues en AWS, Cloudflare, Railway, Hostinger y Vercel.",
+    "alias": "También conocido como Juan Gabriel Rinas · JGRinas",
     "btnProjects": "Ver proyectos",
     "btnCv": "Descargar CV",
     "btnLinkedin": "LinkedIn"
@@ -45,7 +46,7 @@
   },
   "aboutMe": {
     "title": "Sobre Mí",
-    "desc": "Soy Juan Gabriel Benitez Rinas, desarrollador Full-Stack y Mobile con más de {{years}} años de experiencia. Graduado como Analista Programador Universitario en la Universidad Nacional del Nordeste (UNNE). Disfruto aprender nuevas tecnologías y construir herramientas innovadoras.",
+    "desc": "Soy Juan Gabriel Benitez Rinas, también conocido como Juan Gabriel Rinas o JGRinas en GitHub, desarrollador Full-Stack y Mobile con más de {{years}} años de experiencia. Graduado como Analista Programador Universitario en la Universidad Nacional del Nordeste (UNNE). Disfruto aprender nuevas tecnologías y construir herramientas innovadoras.",
     "passion": "Apasionado por código limpio, performance y buena UX."
   },
   "education": {
@@ -444,7 +445,7 @@
     "description": "Creando experiencias digitales con impacto.",
     "nandexaPrefix": "Proyectos y soluciones digitales junto a",
     "nandexaName": "Nandexa",
-    "copyright": "© 2026 Juan Gabriel Benitez Rinas. Todos los derechos reservados.",
+    "copyright": "© 2026 Juan Gabriel Benitez Rinas · JGRinas",
     "scrollTop": "Volver arriba",
     "navLabel": "Enlaces del footer"
   }

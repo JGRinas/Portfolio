@@ -25,4 +25,7 @@ dist-ssr
 
 .claude/
 
+# Deliverables locales (no versionar)
+seo-name-indexing-update.md
+
 .env

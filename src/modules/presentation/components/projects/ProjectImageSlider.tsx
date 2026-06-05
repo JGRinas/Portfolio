@@ -6,7 +6,10 @@ interface ProjectImageSliderProps {
   alt: string;
 }
 
-export const ProjectImageSlider = ({ images, alt }: ProjectImageSliderProps) => {
+export const ProjectImageSlider = ({
+  images,
+  alt,
+}: ProjectImageSliderProps) => {
   const [index, setIndex] = useState(0);
   const hasMultiple = images.length > 1;
 

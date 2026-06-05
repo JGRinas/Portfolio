@@ -3,10 +3,7 @@ interface ProjectTagProps {
   variant?: "default" | "overlay";
 }
 
-export const ProjectTag = ({
-  label,
-  variant = "default",
-}: ProjectTagProps) => (
+export const ProjectTag = ({ label, variant = "default" }: ProjectTagProps) => (
   <span
     className={
       variant === "overlay"

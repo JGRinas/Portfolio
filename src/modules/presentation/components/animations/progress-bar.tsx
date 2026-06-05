@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const ProgressBar: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -11,15 +11,15 @@ const ProgressBar: React.FC = () => {
       setScrollProgress(progress);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className='fixed top-0 left-0 w-full h-1 bg-gray-300'>
+    <div className="fixed top-0 left-0 w-full h-1 bg-gray-300">
       <div
         style={{ width: `${scrollProgress}%` }}
-        className='h-full bg-purple-600 transition-width duration-300'
+        className="h-full bg-purple-600 transition-width duration-300"
       ></div>
     </div>
   );

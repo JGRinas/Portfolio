@@ -55,10 +55,8 @@ export default {
           "radial-gradient(ellipse 95% 75% at 50% 45%, rgba(139, 92, 246, 0.2) 0%, transparent 55%), radial-gradient(ellipse 55% 45% at 25% 75%, rgba(34, 211, 238, 0.14) 0%, transparent 50%), radial-gradient(ellipse 45% 40% at 80% 30%, rgba(59, 130, 246, 0.12) 0%, transparent 45%)",
         "hero-planet-halo":
           "radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.25) 0%, rgba(139, 92, 246, 0.12) 45%, transparent 70%)",
-        "gradient-accent":
-          "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
-        "gradient-text":
-          "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
+        "gradient-accent": "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
+        "gradient-text": "linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)",
       },
       keyframes: {
         floatSlow: {

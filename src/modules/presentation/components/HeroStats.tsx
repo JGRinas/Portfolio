@@ -1,10 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {
-  FaBriefcase,
-  FaCloud,
-  FaCode,
-  FaMobileAlt,
-} from "react-icons/fa";
+import { FaBriefcase, FaCloud, FaCode, FaMobileAlt } from "react-icons/fa";
 import { getYearsOfExperienceLabel } from "~/modules/infrastructure/utils/experienceYears";
 
 const STAT_ICONS = [FaBriefcase, FaCode, FaMobileAlt, FaCloud] as const;
@@ -14,9 +9,7 @@ export const HeroStats = () => {
   const { t } = useTranslation("common", { keyPrefix: "heroStats" });
 
   return (
-    <div
-      className="mt-10 grid grid-cols-2 gap-3 rounded-2xl border border-border-light bg-background-lightElevated/60 p-4 shadow-cardLight backdrop-blur-md dark:border-border-dark dark:bg-background-darkElevated/50 dark:shadow-cardDark md:mt-12 md:grid-cols-4 md:gap-0 md:p-0 animate-fadeUp motion-reduce:animate-none [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]"
-    >
+    <div className="mt-10 grid grid-cols-2 gap-3 rounded-2xl border border-border-light bg-background-lightElevated/60 p-4 shadow-cardLight backdrop-blur-md dark:border-border-dark dark:bg-background-darkElevated/50 dark:shadow-cardDark md:mt-12 md:grid-cols-4 md:gap-0 md:p-0 animate-fadeUp motion-reduce:animate-none [animation-delay:600ms] opacity-0 [animation-fill-mode:forwards]">
       {STAT_KEYS.map((key, index) => {
         const Icon = STAT_ICONS[index];
         return (
@@ -42,7 +35,9 @@ export const HeroStats = () => {
               </p>
               <p
                 className={`hidden text-xs text-text-lightSecondary dark:text-text-darkSecondary ${
-                  key === "cloud" || key === "mobileLead" ? "md:block" : "lg:block"
+                  key === "cloud" || key === "mobileLead"
+                    ? "md:block"
+                    : "lg:block"
                 }`}
               >
                 {t(`${key}.desc`)}

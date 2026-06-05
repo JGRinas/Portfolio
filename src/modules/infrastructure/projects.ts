@@ -104,7 +104,12 @@ export const projects: Project[] = [
     id: "macrointell",
     type: "secondary",
     images: [MacroIntell1, MacroIntell2],
-    technologies: ["React Native", "TypeScript", "Mobile Development", "Mentoring"],
+    technologies: [
+      "React Native",
+      "TypeScript",
+      "Mobile Development",
+      "Mentoring",
+    ],
   },
   {
     id: "gillette",
@@ -202,22 +207,14 @@ export const projects: Project[] = [
     type: "early",
     year: "2021",
     images: [FileTable2, FileTable3, FileTable4],
-    technologies: [
-      "C#",
-      "WinForms",
-      "SQL Server",
-      "FileTable",
-      "HierarchyID",
-    ],
+    technologies: ["C#", "WinForms", "SQL Server", "FileTable", "HierarchyID"],
     repository: "https://github.com/JGRinas/Galeria-con-FileTable-SQL-Server",
   },
 ];
 
 export const featuredProjects = projects.filter((p) => p.type === "featured");
 
-export const secondaryProjects = projects.filter(
-  (p) => p.type === "secondary",
-);
+export const secondaryProjects = projects.filter((p) => p.type === "secondary");
 
 export const earlyProjects = projects.filter((p) => p.type === "early");
 

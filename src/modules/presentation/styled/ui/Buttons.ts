@@ -10,7 +10,10 @@ export const Button = styled.button<ButtonProps>`
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease;
 
   /* Estilos según el prop variant */
   background-color: ${({ theme, variant }) =>

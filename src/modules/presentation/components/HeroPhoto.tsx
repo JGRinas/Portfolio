@@ -20,10 +20,7 @@ const glassCardClass =
   "rounded-xl border border-border-light bg-background-lightElevated/80 shadow-cardLight backdrop-blur-md dark:border-border-dark dark:bg-background-darkElevated/75 dark:shadow-planetGlow";
 
 const SpaceBackground = () => (
-  <div
-    className="pointer-events-none absolute inset-0 z-0"
-    aria-hidden="true"
-  >
+  <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
     <div className="absolute inset-[-15%] bg-hero-galaxy-nebula opacity-50 dark:opacity-100" />
     <div className="absolute inset-[-8%] bg-hero-galaxy-core opacity-60 animate-pulseGlow motion-reduce:animate-none dark:opacity-100" />
     <div className="absolute left-1/2 top-1/2 h-[70%] w-[70%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-glow-blue opacity-40 blur-3xl dark:opacity-70" />

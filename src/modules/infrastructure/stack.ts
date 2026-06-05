@@ -49,8 +49,7 @@ export const STACK_CATEGORIES = [
   },
 ] as const;
 
-export type StackItemKey =
-  (typeof STACK_CATEGORIES)[number]["items"][number];
+export type StackItemKey = (typeof STACK_CATEGORIES)[number]["items"][number];
 
 export const NANDEXA_URL = "https://nandexa.com/";
 export const CONTACT_EMAIL = "juangabrielrinas@gmail.com";

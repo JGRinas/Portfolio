@@ -2,11 +2,7 @@ import { useTranslation } from "react-i18next";
 import { FaDownload } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import CV from "~/assets/documents/CV-JuanGabrielBenitezRinas.pdf";
-import {
-  GithubIcon,
-  GitlabIcon,
-  LinkedinIcon,
-} from "~/assets/icons";
+import { GithubIcon, GitlabIcon, LinkedinIcon } from "~/assets/icons";
 import { handleScrollToSection } from "~/modules/infrastructure/utils/handleScroll";
 import { HeroPhoto } from "./HeroPhoto";
 import { HeroStats } from "./HeroStats";

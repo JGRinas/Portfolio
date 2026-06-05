@@ -22,7 +22,7 @@ export const Projects = () => {
   );
 
   const selectedProject = selectedProjectId
-    ? getProjectById(selectedProjectId) ?? null
+    ? (getProjectById(selectedProjectId) ?? null)
     : null;
 
   return (

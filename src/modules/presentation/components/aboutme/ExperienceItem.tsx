@@ -50,7 +50,7 @@ const getCollapsedTechnologies = (item: ExperienceItemData): string[] => {
   if (item.subroles?.length) {
     return [...new Set(item.subroles.flatMap((s) => s.technologies))].slice(
       0,
-      MAX_COLLAPSED_TECHS
+      MAX_COLLAPSED_TECHS,
     );
   }
   return (item.technologies ?? []).slice(0, MAX_COLLAPSED_TECHS);
@@ -112,9 +112,7 @@ export const ExperienceItem = ({
           ))
         : null}
 
-      {!expanded && (
-        <TechList technologies={getCollapsedTechnologies(item)} />
-      )}
+      {!expanded && <TechList technologies={getCollapsedTechnologies(item)} />}
 
       {expanded && !hasSubroles && (
         <TechList technologies={getAllTechnologies(item)} />

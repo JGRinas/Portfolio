@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n, t } = useTranslation("common", { keyPrefix: "language" });
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.resolvedLanguage?.split("-")[0] ?? i18n.language.split("-")[0];
 
   const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
     i18n.changeLanguage(event.target.value);

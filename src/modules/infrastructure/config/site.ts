@@ -11,10 +11,10 @@ export const SITE_TITLE =
   "Juan Gabriel Benitez Rinas | Full-Stack & Mobile Developer";
 
 export const SITE_DESCRIPTION =
-  "Portfolio oficial de Juan Gabriel Benitez Rinas, también conocido como Juan Gabriel Rinas o JGRinas. Desarrollador Full-Stack y Mobile especializado en React, React Native, TypeScript, Node.js, NestJS y AWS.";
+  "Portfolio oficial de Juan Gabriel Benitez Rinas. Desarrollador Full-Stack y Mobile especializado en React, React Native, TypeScript, Node.js, NestJS y AWS.";
 
 export const SITE_OG_DESCRIPTION =
-  "Portfolio oficial de Juan Gabriel Rinas, desarrollador Full-Stack & Mobile especializado en React, React Native, TypeScript, Node.js, NestJS y AWS.";
+  "Official portfolio of Juan Gabriel Benitez Rinas. Full-Stack & Mobile Developer specialized in React, React Native, TypeScript, Node.js, NestJS and AWS.";
 
 export const THEME_COLOR_DARK = "#030712";
 

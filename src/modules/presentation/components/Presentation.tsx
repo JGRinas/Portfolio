@@ -52,12 +52,6 @@ export const Presentation = () => {
             </h1>
 
             <p
-              className={`mt-2 text-sm font-medium text-text-lightSecondary dark:text-text-darkSecondary ${fadeUpClass} [animation-delay:150ms]`}
-            >
-              {t("alias")}
-            </p>
-
-            <p
               className={`mt-5 max-w-xl text-base leading-relaxed text-text-lightSecondary dark:text-text-darkSecondary sm:text-lg ${fadeUpClass} [animation-delay:200ms]`}
             >
               {t("desc")}

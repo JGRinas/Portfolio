@@ -5,6 +5,9 @@ import PassLp1 from "~/assets/images/projects/passlp/1.webp";
 
 import AgroCarteira1 from "~/assets/images/projects/agrocarteira/1.webp";
 import AgroCarteira2 from "~/assets/images/projects/agrocarteira/2.webp";
+import SepeliosCuruzu1 from "~/assets/images/projects/sepelios-curuzu/1.webp";
+import SepeliosCuruzu2 from "~/assets/images/projects/sepelios-curuzu/2.webp";
+import SepeliosCuruzu3 from "~/assets/images/projects/sepelios-curuzu/3.webp";
 import TodoAgro1 from "~/assets/images/projects/todoagro/1.webp";
 import AgroNative1 from "~/assets/images/projects/agronative/1.webp";
 import MacroIntell1 from "~/assets/images/projects/macrointell-app/1.webp";
@@ -64,6 +67,19 @@ export const projects: Project[] = [
       "ml5",
       "FaceMesh",
       "Offline ML",
+    ],
+  },
+  {
+    id: "sepelios-curuzu",
+    type: "secondary",
+    images: [SepeliosCuruzu1, SepeliosCuruzu2, SepeliosCuruzu3],
+    technologies: [
+      "Angular",
+      "NestJS",
+      "TypeScript",
+      "MongoDB",
+      "Cloudflare",
+      "Railway",
     ],
   },
   {

@@ -264,6 +264,17 @@
           "Despliegue en AWS y Cloudflare"
         ]
       },
+      "sepelios-curuzu": {
+        "title": "Sepelios Curuzu",
+        "description": "Sistema web para la gestión integral de abonados, cobranzas y administración operativa de una empresa de sepelios.",
+        "longDescription": "Sistema web desarrollado para la gestión integral de abonados, cobranzas y administración operativa de una empresa de sepelios. La plataforma permite administrar abonados, códigos de precio, deuda por períodos, cobro de cuotas, emisión de recibos, caja diaria, impresión masiva, modo cobrador y rendiciones. El frontend fue desarrollado en Angular, orientado a una experiencia administrativa simple y rápida, con módulos para gestión de abonados, cobro de cuotas, recibos, caja diaria, modo cobrador, impresión masiva y rendiciones. Permite operar flujos reales de cobranza, visualizar deudores, registrar pagos, descargar e imprimir recibos y consultar históricos de caja. El backend fue desarrollado con NestJS y TypeScript, estructurado por módulos de negocio, con autenticación mediante cookies HTTP-only, roles de usuario, validaciones, Swagger, persistencia en MongoDB y lógica de cuenta corriente por períodos. Gestiona generación de deuda, pagos, recibos, caja diaria, impresión masiva, rendiciones y flujo de cobradores, manteniendo trazabilidad e idempotencia en operaciones sensibles. El frontend está desplegado en Cloudflare Pages, con dominio migrado a Cloudflare DNS para gestión de zona, SSL y routing. El backend está en Railway, conectado a MongoDB y configurado con variables de entorno para desarrollo, staging y producción.",
+        "highlights": [
+          "Gestión de abonados, deuda por períodos y cobro de cuotas",
+          "Caja diaria, modo cobrador, recibos y rendiciones",
+          "Frontend en Angular y backend en NestJS + MongoDB",
+          "Despliegue en Cloudflare Pages y Railway"
+        ]
+      },
       "agrocarteira": {
         "title": "AgroCarteira",
         "description": "Billetera virtual para el mercado brasilero, complementaria a TodoAgro, enfocada en transferencias, seguridad y experiencia mobile.",

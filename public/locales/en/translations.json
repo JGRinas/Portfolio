@@ -254,6 +254,17 @@
           "Deployment on AWS and Cloudflare"
         ]
       },
+      "sepelios-curuzu": {
+        "title": "Sepelios Curuzu",
+        "description": "Web system for comprehensive subscriber, collections and operational management for a funeral services company.",
+        "longDescription": "Web system built for comprehensive management of subscribers, collections and day-to-day operations at a funeral services company. The platform supports subscriber records, pricing codes, period-based debt, installment collection, receipt issuance, daily cash register, bulk printing, collector mode and settlement workflows. The Angular frontend focuses on a fast administrative experience with modules for subscribers, payments, receipts, cash register, collector mode, bulk printing and settlements. It supports real collection flows, debtor visibility, payment registration, receipt download/print and cash history. The NestJS + TypeScript backend is organized by business modules with HTTP-only cookie authentication, user roles, validations, Swagger, MongoDB persistence and period-based account logic. It handles debt generation, payments, receipts, daily cash, bulk printing, settlements and collector workflows with traceability and idempotency on sensitive operations. The frontend is deployed on Cloudflare Pages with DNS managed in Cloudflare; the backend runs on Railway connected to MongoDB, with environment-based configuration for development, staging and production.",
+        "highlights": [
+          "Subscriber management, period debt and installment collection",
+          "Daily cash register, collector mode, receipts and settlements",
+          "Angular frontend and NestJS + MongoDB backend",
+          "Deployment on Cloudflare Pages and Railway"
+        ]
+      },
       "agrocarteira": {
         "title": "AgroCarteira",
         "description": "Digital wallet for the Brazilian market, built as a companion app for TodoAgro, focused on transfers, security and mobile UX.",
